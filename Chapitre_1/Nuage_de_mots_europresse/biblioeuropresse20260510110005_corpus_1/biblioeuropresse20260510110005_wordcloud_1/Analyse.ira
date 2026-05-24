@@ -1,0 +1,19 @@
+[wordcloud]
+type = wordcloud
+lem = 1
+pathout = C:\Users\Enora\Downloads\biblioeuropresse20260510110005_corpus_1\biblioeuropresse20260510110005_wordcloud_1
+corpus = 0703efb0-8a90-4a26-848f-9077c33bcbd5
+uuid = d9e95573-722a-4bfa-98ea-6d7d7ef2256c
+name = biblioeuropresse20260510110005_wordcloud_1
+width = 800
+height = 800
+maxword = 600
+mincex = 0.5
+maxcex = 5.0
+col_text = (0, 0, 0, 255)
+col_bg = (255, 255, 255, 255)
+mode = 0
+svg = 0
+graphout = C:\Users\Enora\Downloads\biblioeuropresse20260510110005_corpus_1\biblioeuropresse20260510110005_wordcloud_1\nuage_1.png
+time = 0h 0m 8s
+ira = C:\Users\Enora\Downloads\biblioeuropresse20260510110005_corpus_1\biblioeuropresse20260510110005_wordcloud_1\Analyse.ira
