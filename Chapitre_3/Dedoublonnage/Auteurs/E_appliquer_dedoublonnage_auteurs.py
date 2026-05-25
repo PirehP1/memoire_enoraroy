@@ -1,6 +1,5 @@
 """
-Applique les fusions d'auteurs décidées dans le fichier JSON produit par
-`01_detecter_doublons_auteurs.py`.
+Applique les fusions d'auteurs décidées dans le fichier JSON n'importe quel script (changer la variable contenue dans le fichier)
 
 Règles de lecture du JSON :
   - "action": "keep"   → auteur conservé
