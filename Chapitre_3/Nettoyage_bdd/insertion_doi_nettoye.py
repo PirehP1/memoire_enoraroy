@@ -1,6 +1,7 @@
+"""permet d'insérer le doi nettoyé dans l'attribut "doi" de la bdd mysql, pour toutes les références où le doi était pris dans le titre ou le titre secondaire"""
+
 import mysql.connector
 import json
-from typing import Optional
 
 DB_CONFIG = {
     'host': 'localhost',
