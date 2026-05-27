@@ -50,7 +50,9 @@ Pour les DOI non résolus par le script 01. Suit la redirection `doi.org → éd
 4. `<html lang="...">`
 5. spaCy sur le corps de la page, dans le cas où aucune balise meta n'est présente
 
-Un fallback avec SSL désactivé est tenté automatiquement en cas d'erreur de certificat. Toutefois, il faut noter que certains sites chargent leur contenu en JavaScript ; le scraping HTML statique du script 02 échoue dans ces cas. Aussi, cette étape signifie qu'on présuppose que le site de l'éditeur est potentiellement dans la même langue)
+Un fallback avec SSL désactivé est tenté automatiquement en cas d'erreur de certificat. Toutefois, il faut noter que certains sites chargent leur contenu en JavaScript ; le scraping HTML statique du script 02 échoue dans ces cas. Aussi, cette étape signifie qu'on présuppose que le site de l'éditeur est potentiellement dans la même langue).
+
+> Après coup, ce n'est sans doute pas tout à fait pertinent et il faudrait sans doute passer directement du 01 au 03. En tous cas, si c'était à refaire, je ne crois pas recommencer ce second script.
 
 **Sortie** : toutes les références traitées, y compris les échecs (`langue: "none"`).
 
