@@ -53,19 +53,18 @@ from pathlib import Path
 import pandas as pd
 import networkx as nx
 
-
-EDGES_PATH = r"C:\Users\Enora\Documents\Université\Mémoire\CLE_USB\chapitre_4\SNA_coautorat\Noeuds_et_aretes\edges_author_pub.csv"
-NODES_PATH = r"C:\Users\Enora\Documents\Université\Mémoire\CLE_USB\chapitre_4\SNA_coautorat\Noeuds_et_aretes\nodes_all.csv"
-
-YEAR_MIN = 1975
-YEAR_MAX = 2025
-
 BASE_DIR   = Path(__file__).resolve().parent.parent
+EDGES_PATH = BASE_DIR / "Noeuds_et_aretes" / "edges_author_pub.csv"
+NODES_PATH = BASE_DIR / "Noeuds_et_aretes" / "nodes_all.csv"
+
 OUTPUT_DIR = BASE_DIR / "output"
 TEX_DIR    = OUTPUT_DIR / "tex"
 TEMP_DIR   = OUTPUT_DIR / "temporal"
 
 OUTPUT_PREFIX = str(TEMP_DIR / "result")
+
+YEAR_MIN = 1975
+YEAR_MAX = 2025
 
 def _progress(step, total, label=""):
     """Affiche une barre de progression dans la console (mise à jour en place)."""
