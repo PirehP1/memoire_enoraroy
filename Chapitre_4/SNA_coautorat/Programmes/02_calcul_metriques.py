@@ -155,6 +155,10 @@ def compute_node_metrics(G, col_prefix=""):
     print(f"    Betweenness...")
     btw = nx.betweenness_centrality(G, weight="weight", normalized=True)
 
+    # Closeness
+    print(f"    Closeness...")
+    clo = nx.closeness_centrality(G)
+
     # PageRank
     print(f"    PageRank...")
     pr = nx.pagerank(G, alpha=0.85, weight="weight")
@@ -186,6 +190,7 @@ def compute_node_metrics(G, col_prefix=""):
         f"{p}degree":      [degree[n]   for n in nodes],
         f"{p}degree_w":    [degree_w[n] for n in nodes],
         f"{p}betweenness": [btw[n]      for n in nodes],
+        f"{p}closeness":   [clo[n]      for n in nodes],
         f"{p}pagerank":    [pr[n]       for n in nodes],
         f"{p}katz":        [katz[n]     for n in nodes],
         f"{p}eigenvector": [ev[n]       for n in nodes],
