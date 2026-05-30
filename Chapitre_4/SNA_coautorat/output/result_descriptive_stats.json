@@ -1,0 +1,13 @@
+{
+    "total_auteurs": 15012,
+    "genre_renseigne": 13047,
+    "genre_non_renseigne": 1965,
+    "nationalites_aucune": 7841,
+    "nationalites_une": 6632,
+    "nationalites_plusieurs": 539,
+    "sans_identifiant": 5059,
+    "total_publications": 4734,
+    "pubs_avec_langue": 4678,
+    "pubs_sans_langue": 56,
+    "langues_distinctes": 31
+}
