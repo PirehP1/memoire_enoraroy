@@ -1,0 +1,8 @@
+﻿metrique,H,p_value,n_groupes,note
+degree,225.7556,6.6796e-38,19,
+degree_weighted,212.6179,2.9599e-35,19,
+betweenness,151.3876,3.9933e-23,19,
+pagerank,128.9498,8.4141e-19,19,
+katz,233.6948,1.6587e-39,19,
+eigenvector,226.4058,4.9370e-38,19,
+clustering,154.8055,8.6223e-24,19,
