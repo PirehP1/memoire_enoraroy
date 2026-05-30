@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-BASE = Path(r"C:\Users\Enora\Documents\Université\Mémoire\CLE_USB\chapitre_4\SNA_coautorat")
+BASE         = Path(__file__).resolve().parent.parent
 EDGES_PATH   = BASE / "Noeuds_et_aretes" / "edges_author_pub.csv"
 NODES_PATH   = BASE / "Noeuds_et_aretes" / "nodes_all.csv"
 METRICS_PATH = BASE / "output" / "auteur_simple_nodes.csv"
