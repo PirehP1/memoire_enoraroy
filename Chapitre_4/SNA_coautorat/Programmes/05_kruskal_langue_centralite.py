@@ -19,9 +19,6 @@ if "degree_w" in df.columns:
 print(f"Lignes initiales : {len(df)}")
 
 df["id"] = df["id"].astype(str).str.strip()
-if "pagerank" in df.columns:
-    df["pagerank_num"] = pd.to_numeric(df["pagerank"], errors="coerce")
-    df = df.sort_values("pagerank_num", ascending=False)
 
 df = df.drop_duplicates(subset="id", keep="first").copy()
 print(f"Publications uniques : {len(df)}")
