@@ -4,6 +4,8 @@
 
 Ce script réalise un appariement automatisé entre les auteurs stockés dans une base de données MySQL locale et les notices d'autorité de personnes physiques produites par la Bibliothèque nationale de France (BnF), distribuées au format ISO 2709 / UNIMARC à l'adresse [suivante](https://api.bnf.fr/fr/notices-dautorite-personnes-collectivites-oeuvres-lieux-noms-communs-de-bnf-catalogue-general). Je ne fournis pas les données ici, celles-ci étant très volumineuses et disponibles au téléchargement en ligne.
 
+Il est aussi vivement conseillé de vérifier rapidement le fichier de résultats de match avant toute insertion en bases de données.
+
 ## Fonctionnement
 
 Le script procède en trois temps :
