@@ -84,6 +84,67 @@ Sorties : `kruskal_langue_centralite.csv`.
 
 ---
 
+### `06_boxplot_nationalite_centralite.py` — Distribution de la centralité par nationalité
+
+Visualise la distribution d'un indicateur de centralité (configurable via la constante `METRIC` en tête de script) pour les huit nationalités les plus représentées dans le réseau d'auteurs. Les nationalités sont obtenues depuis MongoDB (champ `nationalites`) et fusionnées avec les métriques de centralité calculées par le script `02`.
+
+**Note méthodologique** : les auteurs ayant plusieurs nationalités sont dupliqués — une ligne par pays après la jointure. Chaque nationalité reçoit le score de centralité de l'auteur concerné. Ce choix gonfle légèrement les effectifs des pays les plus représentés mais permet une lecture par nationalité plutôt que par auteur. Cette convention est signalée dans le titre du graphe. Les boxplots sont triés par médiane croissante et affichés sur une échelle logarithmique ; les moyennes sont figurées par un losange orange.
+
+Sorties : `boxplot_<metrique>_nationalite.png`.
+
+---
+
+### `07_correlation_indicateur_centralite.py` — Matrices de corrélation de Spearman
+
+Calcule les corrélations de Spearman entre les différents indicateurs de centralité, séparément pour les auteurs (projections simple et Newman) et pour les publications (projections simple et Newman). Dans chaque cas, l'analyse est restreinte aux nœuds appartenant à la LCC, identifiée par reconstruction du graphe biparti.
+
+Les corrélations sont présentées sous forme de heatmaps (triangle inférieur uniquement), où chaque cellule affiche le coefficient ρ et la valeur de p brute. La palette divergente (bleu pour les corrélations positives, rouge pour les corrélations négatives) est centrée sur 0. Les matrices sont également exportées en LaTeX.
+
+Sorties : `img/heatmap_corr_auteurs_simple.png`, `img/heatmap_corr_auteurs_newman.png`, `img/heatmap_corr_publications_simple.png`, `img/heatmap_corr_publications_newman.png`, fichiers `.tex` associés.
+
+---
+
+### `08_metriques_centralite_temporelles.py` — Métriques de centralité sur réseau cumulatif
+
+Script de la sous-pipeline temporelle. Il reconstruit les réseaux de manière cumulative, année par année, de 1975 à 2025, en mettant à jour les graphes : seules les nouvelles publications de chaque année sont ajoutées, sans reconstruction complète depuis le graphe biparti, réduisant le temps de calcul.
+
+Trois réseaux sont maintenus en parallèle : la projection auteur-auteur simple (poids = publications partagées), la projection auteur-auteur de Newman (poids = Σ 1/(k−1)), et le réseau publication-publication (poids = auteurs partagés). Pour chaque année et chaque réseau, les indicateurs globaux (densité, taille de la LCC, diamètre, clustering moyen) et les métriques par nœud (degré, closeness, betweenness topologique exacte, eigenvector) sont calculés et exportés.
+
+**Note méthodologique** : PageRank et Katz ont été écartés de l'analyse temporelle. La betweenness est calculée de façon exacte.
+
+Sorties : `temporal/result_temporal_global.csv`, `temporal/result_temporal_global_pivot.csv`, `temporal/result_temporal_nodes.csv`, `temporal/result_temporal_nodes_simple.csv`, `temporal/result_temporal_nodes_newman.csv`, `temporal/result_temporal_nodes_pub.csv`, `tex/temporal_global_pivot.tex`.
+
+---
+
+### `09_correlation_annee_entree_LCC_et_centralite.py` — Corrélation Spearman ancienneté / centralité
+
+Teste si l'ancienneté dans la composante connexe principale — mesurée par l'année d'entrée dans la LCC — est corrélée aux indicateurs de centralité calculés en synchronie (snapshot final). L'analyse distingue deux populations : la population complète (Run A) et le top 1 % des auteurs les plus centraux pour chaque indicateur (Run B).
+
+L'année d'entrée dans la LCC est reconstituée de façon cumulative : à chaque année t, on identifie quels auteurs intègrent pour la première fois la composante principale. La LCC est considérée comme stable à partir de 2000, année à partir de laquelle elle dépasse 200 nœuds — les auteurs présents dès cette première LCC stable reçoivent tous l'année 2000 comme année d'entrée.
+
+Sorties : `spearman_simple/dataset.csv`, `spearman_simple/resultats_spearman.csv`, `spearman_simple/scatter_spearman.png`.
+
+---
+
+### `10_gini_temporel.py` — Évolution du coefficient de Gini sur réseau cumulatif
+
+Calcule l'évolution du coefficient de Gini pour les indicateurs de centralité au fil du temps, à partir des fichiers produits par `08`. Pour chaque année, la LCC est reconstruite depuis les arêtes cumulées, et le Gini est calculé sur les valeurs des nœuds présents dans cette LCC — ce qui garantit que l'évolution observée reflète la structure du réseau principal plutôt que les fluctuations des composantes isolées.
+
+Les résultats sont visualisés sous forme de courbes temporelles (une par indicateur) superposées à des barres grises représentant la taille de la LCC.
+
+Sorties : `img/gini_evolution_auteurs.png`, `img/gini_evolution_publications.png`, `gini_temporel_auteurs.csv`, `gini_temporel_publications.csv`.
+
+---
+
+## Notes méthodologiques
+
+Ces scripts ont été développés au fur et à mesure de l'avancement de l'analyse et ne constituent pas nécessairement un workflow à suivre.
+
+Si le réseau modélisé est bien plus vaste que la composante connexe principale, ma question portait principalement sur le coautorat structuré -- d'où le fait que je n'ai analysé que celle ci.
+
+Les deux schémas de projection (simple et Newman) sont maintenus en parallèle, mais j'admet davantage utiliser la projection simple dans le mémoire. Le but d'avoir tenté les deux était aussi pédagogique, pour me faire mieux saisir leurs différences.
+
+Par ailleurs, l'usage de LLM a été, pour ces scripts, davantage mobilisé que pour le reste de mon travail. Si la logique analytique — choix des indicateurs, seuils, conventions de traitement — reflète des décisions prises en connaissance de cause au fil de l'analyse, certains détails d'implémentation (gestion des structures de données, optimisations algorithmiques, syntaxe NetworkX) ont été délégués sans pour autant que je parvienne à saisir tous les détails. Ces scripts sont donc à considérer comme des outils de recherche reproductibles dans le cadre de ce mémoire, et non comme du code de production audité.
 
 ---
 
