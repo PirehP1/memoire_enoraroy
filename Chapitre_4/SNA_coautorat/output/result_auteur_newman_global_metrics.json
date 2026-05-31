@@ -1,0 +1,22 @@
+{
+  "Indicateur": [
+    "Auteurs (nœuds)",
+    "Liens",
+    "Densité",
+    "Composantes connexes",
+    "Taille LCC",
+    "Diamètre (composante géante)",
+    "Clustering moyen",
+    "Degré moyen"
+  ],
+  "Valeur": [
+    15012,
+    93378,
+    0.000828755422149523,
+    2335,
+    6239,
+    18,
+    0.01200508996014489,
+    12.440447641886491
+  ]
+}
