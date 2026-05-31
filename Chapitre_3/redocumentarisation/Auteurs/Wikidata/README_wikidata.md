@@ -17,7 +17,7 @@ Fichiers de sortie principaux :
 
 ## Description du script
 
-### `wikidata_enrichment.py` — Collecte et enrichissement via Wikidata
+### `wikidata_enrichissement_et_alignement_referentiels.py.` — Collecte et enrichissement via Wikidata
 
 Charge depuis MySQL tous les auteurs dont au moins une colonne d'identifiant est renseignée. Pour chaque auteur, construit une requête SPARQL unique combinant en `UNION` tous ses identifiants disponibles, ce qui permet de trouver l'entité Wikidata correspondante en un seul aller-retour réseau. La même requête récupère simultanément, via des clauses `OPTIONAL` et `SERVICE wikibase:label`, l'ensemble des identifiants externes connus de l'entité ainsi que les labels de genre, nationalité et langues en français (avec repli sur l'anglais).
 
