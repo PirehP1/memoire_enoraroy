@@ -85,5 +85,3 @@ python-Levenshtein     0.25
 ```
 
 Une instance MySQL locale est requise pour les scripts `01` et `03`. Les scripts `01` et `02` interrogent les API publiques d'IdRef (`https://www.idref.fr`) ; une connexion internet est donc nécessaire pour `01`.
-
-**Note** : le nom de la base de données diffère entre `01` (`test_programme`) et `03` (`references_biblio`). À harmoniser selon l'environnement cible avant exécution.
