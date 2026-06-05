@@ -1,6 +1,15 @@
 # Pipeline de topic modelling BERTopic
 
-Ce dossier regroupe les scripts utilisés pour identifier des thématiques dans un corpus de références bibliographiques en anglais, à partir d'un JSON SpaCy prétraité. Le pipeline repose sur BERTopic avec un clustering Ward hiérarchique substitué à HDBSCAN, choix motivé par la nécessité d'un nombre de topics explicite et d'une assignation déterministe de tous les documents. La sélection du nombre de clusters est automatisée par rang agrégé multi-critères (Silhouette, Calinski-Harabasz, Davies-Bouldin), avec possibilité d'intervention manuelle avant la modélisation finale. Une étape de fusion manuelle guidée par similarité cosinus et Jaccard permet d'affiner les résultats.
+Ce dossier regroupe les scripts utilisés pour identifier des thématiques dans un corpus de références bibliographiques en anglais, à partir d'un JSON SpaCy prétraité. Le pipeline repose sur BERTopic avec un clustering Ward hiérarchique substitué à HDBSCAN, choix motivé par la nécessité d'un nombre de topics explicite et d'une assignation déterministe de tous les documents.
+
+Le pipeline se décompose en trois phases successives, dont seule la troisième est obligatoire pour reproduire les résultats finaux.
+
+**Phase exploratoire (scripts `04b` et `04c`, optionnels)** : comparaison empirique des modèles d'embedding SPECTER et MPNet, sélection du modèle retenu pour le pipeline final. Ces scripts ne modifient aucun cache utilisé par la suite.
+
+**Phase de sélection de K (scripts `01` à `04`, obligatoires)** : construction du corpus, encodage, réduction dimensionnelle, grid search multi-critères. Produit `best_n.json`, point d'entrée de la phase finale. Le K retenu automatiquement peut être modifié manuellement avant de poursuivre.
+
+**Phase finale BERTopic (scripts `05` à `11`, obligatoires)** : fit du modèle, analyse de similarité, fusion manuelle des topics de bruit, évaluation, export.
+
 
 Les scripts sont numérotés dans leur ordre d'exécution obligatoire. Chaque étape produit des fichiers cache ou intermédiaires qui permettent de relancer le pipeline depuis n'importe quel point sans recalculer les étapes précédentes — les embeddings en particulier sont coûteux.
 
@@ -10,7 +19,7 @@ Fichiers d'entrée attendus :
 
 | Fichier | Description |
 |---|---|
-| `ref_anglais_local.json` | Corpus SpaCy : liste d'objets `{"document": {"_id": ..., "lexical_features": [...]}}`. Chaque token porte les champs `token`, `lemma` (vide si token commun, renseigné pour les entités nommées). |
+| `ref_anglais_local.json` | Corpus SpaCy : liste d'objets `{"document": {"_id": ..., "lexical_features": [...]}}`. Chaque token porte les champs `token`, `lemma`. |
 | `stop_words_english.txt` | Liste de stopwords personnalisée, un mot par ligne. Fallback sur la liste sklearn `"english"` si absent. |
 
 Fichiers de sortie principaux :
@@ -21,9 +30,15 @@ Fichiers de sortie principaux :
 | `docs_ctfidf_cache2.npy` | 01 | 05, 07, 08, 11 |
 | `doc_ids_cache2.npy` | 01 | 05, 07 |
 | `embeddings_cache.npy` | 02 | 03, 05 |
-| `umap_embeddings_cache.npy` | 03 | 04, 05, 09 |
-| `ward_grid_search_fine.csv` | 04 | — |
-| `best_n.json` | 04 | 05, 07, 08, 09 |
+| `umap_embeddings_cache.npy` | 03 | 04, 04b, 05, 09 |
+| `ward_grid_search_fine.csv` | 04 | 04b |
+| `best_n.json` | 04 | 04b, 04c, 05, 07, 08, 09 |
+| `embeddings_specter_cache.npy` | 04b | 04c |
+| `umap_specter_cache.npy` | 04b | 04c |
+| `comparison_grid_search.csv` | 04b | — |
+| `comparison_bertopic_K{K}.csv` | 04b | — |
+| `comparison_topics_K{K}.csv` | 04b | — |
+| `specter_topics_K14.csv` | 04c | — |
 | `metrics_before_merge.csv` | 05 | 09 |
 | `topic_coherence_before_merge.csv` | 05 | — |
 | `document_topics_before_merge.csv` | 05 | — |
@@ -47,7 +62,7 @@ Fichiers de sortie principaux :
 | `bertopic_ward_model_final/` | 10 | — |
 | `topic_top15_ctfidf.csv` | 11 | — |
 
----
+--
 
 ## Description des scripts
 
@@ -61,9 +76,7 @@ Le champ `NOISE_TOPIC_IDS` liste les topics considérés comme bruit éditorial 
 
 ### `01_load_corpus.py` — Chargement du JSON SpaCy et construction des corpus
 
-Lit `ref_anglais_local.json` et construit deux versions du corpus. `docs` contient les tokens originaux en minuscules (filtrés alpha) : version destinée aux embeddings BERT, qui gèrent nativement la morphologie via BPE. `docs_ctfidf` contient le lemme SpaCy lorsqu'il est disponible (entités nommées reconnues), sinon le token original : version destinée au CountVectorizer et au c-TF-IDF.
-
-Le champ `lemma` dans le JSON n'est renseigné que pour les entités nommées (POS non vide) ; pour les tokens communs, il est vide. Cette distinction permet d'améliorer la discrimination lexicale inter-topics sans dégrader les embeddings.
+Lit `ref_anglais_local.json` et construit deux versions du corpus. `docs` contient les tokens originaux en minuscules (filtrés alpha) : version destinée aux embeddings BERT, qui gèrent nativement la morphologie via BPE. `docs_ctfidf` contient le lemme SpaCy lorsqu'il est disponible, sinon le token original : version destinée au CountVectorizer et au c-TF-IDF.
 
 Les trois caches sont systématiquement vérifiés à l'entrée ; si les trois sont présents, la construction est sautée.
 
@@ -73,7 +86,7 @@ Sorties : `docs_cache2.npy`, `docs_ctfidf_cache2.npy`, `doc_ids_cache2.npy`.
 
 ### `02_embeddings.py` — Encodage des documents
 
-Encode `docs` avec `sentence-transformers/all-mpnet-base-v2`, retenu empiriquement face à SPECTER sur ce corpus (meilleur sur Silhouette, CH et DB pour K ∈ {30, 35, 40}). `normalize_embeddings=True` projette les vecteurs sur l'hypersphère unitaire, ce qui est cohérent avec `metric="cosine"` dans UMAP.
+Encode `docs` avec `sentence-transformers/all-mpnet-base-v2`, retenu empiriquement face à SPECTER sur ce corpus (retenu à l'issue de la phase exploratoire).
 
 Sorties : `embeddings_cache.npy`.
 
@@ -97,6 +110,30 @@ Sorties : `ward_grid_search_fine.csv`, `best_n.json`.
 
 ---
 
+### `04b_compare_embeddings.py` — Comparaison empirique SPECTER vs MPNet *(optionnel)*
+
+Script exploratoire reproduisant la phase de sélection du modèle d'embedding. Sans effet sur les caches MPNet utilisés par `05`–`11`.
+
+**Phase 1 — grid search comparatif (sklearn brut).** MPNet réutilise `ward_grid_search_fine.csv` produit par `04` (pas de recalcul). SPECTER est encodé, réduit par UMAP et évalué sur la même grille, avec ses propres caches séparés. Sur ce corpus, SPECTER présente des valeurs de CH supérieures à MPNet sur toute la grille, mais une Silhouette inférieure à partir de K=6 — les espaces UMAP n'étant pas isométriques, cette comparaison directe des métriques n'est pas strictement valide et doit être interprétée avec précaution.
+
+**Phase 2 — comparaison BERTopic à K fixé.** Les deux modèles sont ajustés dans BERTopic avec `K_COMPARE` (initialisé à `best_n` MPNet, modifiable en tête de script). Produit un tableau comparatif de métriques et les top-8 termes c-TF-IDF par topic pour chaque modèle.
+
+> **Ordre d'exécution** : après `03` et `04`, avant `05` si la comparaison doit informer le choix du modèle final.
+
+Sorties : `comparison_grid_search.csv`, `comparison_bertopic_K{K}.csv`, `comparison_topics_K{K}.csv`, `embeddings_specter_cache.npy`, `umap_specter_cache.npy`.
+
+---
+
+### `04c_specter_explore.py` — Exploration qualitative de SPECTER à son optimum *(optionnel)*
+
+Fit BERTopic avec SPECTER à K=14, optimum du rang agrégé SPECTER issu de `comparison_grid_search.csv`. Permet d'évaluer si cet optimum statistique produit des topics disciplinairement interprétables. Sur ce corpus, l'inspection qualitative révèle des clusters larges et hétérogènes (les trois premiers topics représentent 17,7 %, 13,2 % et 11,1 % du corpus et mélangent plusieurs thématiques distinctes), confirmant que l'avantage structurel de SPECTER sur un corpus académique ne se traduit pas en interprétabilité disciplinaire.
+
+Le paramètre `K_SPECTER` peut être modifié en tête de script pour tester d'autres valeurs (K=15 et K=17 sont les candidats suivants selon les rangs agrégés). Requiert les caches SPECTER produits par `04b`.
+
+Sorties : `specter_topics_K14.csv`.
+
+---
+
 ### `05_bertopic_fit.py` — Fit BERTopic final et métriques avant fusion
 
 Charge `best_n` depuis `best_n.json` et ajuste BERTopic avec Ward (`n_clusters=best_n`) substitué à HDBSCAN. Le modèle reçoit l'embedding model MPNet, un UMAP `n_components=5`, Ward comme modèle de clustering, et un CountVectorizer avec lemmes et bigrammes. `fit_transform` est appelé sur `docs` avec les embeddings pré-calculés ; `update_topics` est ensuite appelé sur `docs_ctfidf` pour que le c-TF-IDF reflète la normalisation partielle par lemmes.
@@ -109,7 +146,7 @@ Sorties : `metrics_before_merge.csv`, `topic_coherence_before_merge.csv`, `docum
 
 ### `06_similarity_analysis.py` — Matrice de similarité inter-topics
 
-Calcule la matrice de similarité cosinus entre les topic embeddings BERTopic (vecteurs moyens des clusters dans l'espace 768d). Les paires dépassant `SIMILARITY_THRESHOLD` (0,15 par défaut, à ajuster) sont exportées comme candidates à la fusion. Une validation secondaire par similarité de Jaccard sur les top-20 termes c-TF-IDF est produite : cosinus élevé + Jaccard faible signale une similarité superficielle due au vocabulaire générique, et plaide contre la fusion.
+Calcule la matrice de similarité cosinus entre les topic embeddings BERTopic (vecteurs moyens des clusters dans l'espace 768d). Les paires dépassant `SIMILARITY_THRESHOLD` (valeur par défaut, à ajuster dans la config) sont exportées comme candidates à la fusion. Une validation secondaire par similarité de Jaccard sur les top-20 termes c-TF-IDF est produite : cosinus élevé + Jaccard faible signale une similarité superficielle due au vocabulaire générique, et plaide contre la fusion.
 
 Produit également la heatmap cosinus et la hiérarchie BERTopic avant fusion.
 
@@ -129,7 +166,7 @@ Sorties : `topic_coherence_after_merge.csv`, `document_topics_final.csv`, `berto
 
 ### `08_coherence_cv.py` — Score de cohérence C_V (gensim)
 
-Calcule le score de cohérence C_V (gensim) sur les topics thématiques après fusion, en excluant les topics de bruit éditorial (`NOISE_TOPIC_IDS` + topic 29) et les topics dont moins de 3 termes figurent dans le dictionnaire gensim. C_V mesure la cohésion sémantique des termes au sein de chaque topic à partir de co-occurrences dans le corpus.
+Calcule le score de cohérence C_V (gensim) sur les topics thématiques après fusion, en excluant les topics de bruit éditorial (`NOISE_TOPIC_IDS` + topic 29) et les topics dont moins de 3 termes figurent dans le dictionnaire gensim. C_V mesure la cohésion sémantique des termes au sein de chaque topic à partir de co-occurrences dans le corpus (mais, au regard de la sparsité lexicale, C_V est instable et il s'agit davantage d'un indicateur complémentaire.)
 
 Sorties : `coherence_after_merge.csv`.
 
