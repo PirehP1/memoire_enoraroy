@@ -13,6 +13,8 @@ Le pipeline se décompose en trois phases successives, dont seule la troisième 
 
 Les scripts sont numérotés dans leur ordre d'exécution obligatoire. Chaque étape produit des fichiers cache ou intermédiaires qui permettent de relancer le pipeline depuis n'importe quel point sans recalculer les étapes précédentes — les embeddings en particulier sont coûteux.
 
+> ATTENTION : ce pipeline, pour les chapitres, est fait à partir d'un corpus où sont concaténés titres et titres secondaires. Aussi, le package ayant permis de produire le fichier de corpus n'était pas encore publié, je ne décris pas davantage le process pour obtenir ce `corpus.json` à partir de ma base MongoDB.
+
 ---
 
 Fichiers d'entrée attendus :
