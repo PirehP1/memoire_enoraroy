@@ -10,16 +10,17 @@ library(xtable)
 #par nationalité d’auteur (Top 6), entre 1975 et 2025, en pondérant visuellement
 # les trajectoires par le volume de production.
 
-#NOTE IMPORTANTE : les auteurs binationaux sont comptés une fois pour chaque nationalité !
+#NOTE : les auteurs binationaux sont comptés une fois pour chaque nationalité
 
-OUTPUT_DIR <- "chemin_destination"
+OUTPUT_DIR <- "chemin_destination/"
+if (!dir.exists(OUTPUT_DIR)) dir.create(OUTPUT_DIR, recursive = TRUE)
 PAYS_ANGLOPHONES <- c("United States of America", "United Kingdom", "Australia")
 
-con_auth <- mongo(collection = "auteurs", db = "references_biblio_mongo")
+con_auth <- mongo(collection = "authors", db = "references_biblio_mongo")
 df_authors_raw <- con_auth$find(fields = '{"cle": 1, "nationalites": 1}')
 con_auth$disconnect()
 #on filtre immédiatement toutes les références sans auteurs!!
-con_refs <- mongo(collection = "collection_mongo", db = "nom_de_la_base")
+con_refs <- mongo(collection = "references", db = "references_biblio_mongo")
 df_refs_raw <- con_refs$find(
   query  = '{"auteurs": {"$exists": true, "$ne": []}}',
   fields = '{"_id": 1, "auteurs": 1, "language": 1, "year": 1}'
@@ -158,7 +159,7 @@ p_evolution <- ggplot(df_with_ma, aes(x = year, color = pays_nom_display, group 
     title    = "Évolution de la part de l'anglais (Top 6 des nationalités)",
     subtitle = paste(
       "Lignes : moyennes mobiles (3 ans)",
-      "| Épaisseur : [log10(nb publications)]^3.7"
+      "| Épaisseur : [log10(nb publications)]^3.6"
     ),
     x     = "Année",
     y     = "Part de publications en anglais (%)",
