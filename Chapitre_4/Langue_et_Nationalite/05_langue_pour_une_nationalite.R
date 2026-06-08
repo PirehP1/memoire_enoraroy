@@ -22,10 +22,6 @@ PAYS_CIBLE <- "Poland" #ou toute autre nationalité que l'on souhaite étudier
 # publications sur l'ensemble de la période (évite le bruit)
 SEUIL_LANGUE_PCT <- 0.5
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Extraction MongoDB
-# ─────────────────────────────────────────────────────────────────────────────
-
 con_auth <- mongo(collection = "authors", db = "references_biblio_mongo")
 df_authors_raw <- con_auth$find(fields = '{"cle": 1, "nationalites": 1}')
 con_auth$disconnect()
@@ -77,10 +73,7 @@ df_polonais <- refs_clean %>%
 
 cat("Publications avec auteur(s) polonais:", nrow(df_polonais), "\n")
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Filtrage des langues trop rares (bruit)
-# ─────────────────────────────────────────────────────────────────────────────
-
+# Filtrage des langues trop rares
 langues_retenues <- df_polonais %>%
   count(language_name, sort = TRUE) %>%
   mutate(pct = n / sum(n) * 100) %>%
@@ -90,9 +83,7 @@ langues_retenues <- df_polonais %>%
 cat("Langues retenues (>=", SEUIL_LANGUE_PCT, "%) :",
     paste(langues_retenues, collapse = ", "), "\n")
 
-# ─────────────────────────────────────────────────────────────────────────────
 # Agrégation : fréquence relative par langue et par année
-# ─────────────────────────────────────────────────────────────────────────────
 
 df_heatmap <- df_polonais %>%
   mutate(language_name = ifelse(language_name %in% langues_retenues,
