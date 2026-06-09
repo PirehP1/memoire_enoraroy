@@ -1,1 +1,6 @@
-ceci est un placeholder
+
+Une bonne partie de mes scripts s'appuient, du moins pour la construction du corpus et d'autres petits outils pratiques, sur le paquet lexploreur, disponible sur [ce repo](https://github.com/leodumont/lexploreur).
+
+Pour l'étude des cooccurrences de "barbar*", je renvoie au protocole disponible dans [ce repo](https://github.com/SLamasse/matcoocs/tree/main).
+
+Un grand merci aux développeurs de ces outils, qui m'ont bien servi !
