@@ -1,31 +1,22 @@
 """
 Vérification empirique de la loi de Zipf sur un corpus JSON.
+(Basé sur la méthodologie simplifiée de https://codedrome.substack.com/p/zipfs-law-in-python)
 
-La loi de Zipf : la fréquence d'un lemme est inversement
-proportionnelle à son rang : f(r) = C / r^α, avec α ≈ 1 pour la
-plupart des langues naturelles.
+La loi de Zipf : la fréquence d'un lemme est le réciproque de son rang 
+multiplié par la fréquence la plus haute.
+f(r) = f(1) * (1 / r)
 
 Le script :
-  1. Charge les lemmes du corpus en appliquant un filtre chronologique,
-     un filtre alphabétique (lemmes non purement alphabétiques exclus)
-     et un filtre de longueur minimale (< 3 caractères exclus).
+  1. Charge les lemmes du corpus avec filtres.
   2. Calcule les fréquences et range les lemmes par ordre décroissant.
-  3. Ajuste f(r) = C * r^(-α) par régression log-log (linregress).
-     Note : contrairement à la loi de Heap (données cumulatives),
-     les points rang/fréquence sont indépendants → linregress est ici
-     méthodologiquement correct et R², p-value sont interprétables.
+  3. Applique la méthodologie de https://codedrome.substack.com/p/zipfs-law-in-python (C = fréquence max, alpha = 1).
   4. Exporte :
-       - zipf_table.csv          : rang, lemme, fréquence, fréquence prédite
-       - zipf_parametres.csv     : C, α, R², p-value, écart-type
-       - zipf_plot_absolu.pdf    : fréquence vs rang (échelle linéaire)
-       - zipf_plot_loglog.pdf    : fréquence vs rang (log-log + droite ajustée)
-
-Usage :
-    python loi_zipf.py corpus_propre.json
-    python loi_zipf.py corpus_propre.json \\
-        --year-min 1980 --year-max 2020 \\
-        --output output/zipf \\
-        --exclude-pos PUNCT NUM
+       - zipf_table.csv                  : rang, lemme, freq, fraction, freq_predite, diff, diff_%
+       - zipf_parametres.csv             : C, α (fixé à 1)
+       - zipf_plot_absolu.pdf            : fréquence vs rang (linéaire, sans droite théorique)
+       - zipf_plot_absolu_theorique.pdf  : fréquence vs rang (linéaire, avec droite théorique)
+       - zipf_plot_loglog.pdf            : fréquence vs rang (log-log, sans droite théorique)
+       - zipf_plot_loglog_theorique.pdf  : fréquence vs rang (log-log, avec droite théorique)
 """
 
 import argparse
@@ -38,7 +29,6 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from scipy.stats import linregress
 from tqdm import tqdm
 
 
@@ -53,17 +43,7 @@ def load_lemmas(
     year_max: int,
     exclude_pos: set,
 ) -> tuple:
-    """
-    Charge les lemmes du corpus en appliquant trois filtres :
-    - Filtre chronologique : seuls les documents dans [year_min, year_max].
-    - Filtre alphabétique : lemmes non purement alphabétiques exclus
-      (chiffres, tirets, ponctuations isolés).
-    - Filtre de longueur : lemmes de moins de 3 caractères exclus
-      (articles, prépositions fréquents qui bruiteraient la distribution).
-    - Filtre POS (optionnel) : catégories morphosyntaxiques à exclure.
-
-    Retourne (lemmes, nb_docs_total, nb_docs_période).
-    """
+    """Charge les lemmes du corpus avec les filtres demandés."""
     with open(corpus_path, encoding="utf-8") as f:
         data = json.load(f)
 
@@ -74,7 +54,6 @@ def load_lemmas(
     for doc in tqdm(data, desc="Lecture corpus", leave=False):
         meta = doc["document"]
 
-        # Conversion robuste de l'année (peut être str ou int dans le JSON)
         try:
             year = int(meta.get("year"))
         except (TypeError, ValueError):
@@ -102,11 +81,7 @@ def load_lemmas(
 
 
 def compute_zipf(lemmas: list) -> pd.DataFrame:
-    """
-    Calcule les fréquences et classe les lemmes par rang décroissant.
-
-    Retourne un DataFrame avec colonnes : rang, lemme, freq.
-    """
+    """Calcule les fréquences et classe les lemmes par rang décroissant."""
     freq = Counter(lemmas)
     df = (
         pd.DataFrame(freq.items(), columns=["lemme", "freq"])
@@ -119,30 +94,18 @@ def compute_zipf(lemmas: list) -> pd.DataFrame:
 
 def fit_zipf(df: pd.DataFrame) -> dict:
     """
-    Ajuste la loi de Zipf par régression linéaire dans l'espace log-log :
-        log(f) = log(C) − α * log(r)
-
-    Les points rang/fréquence sont indépendants (pas de données cumulatives),
-    donc linregress est méthodologiquement approprié : R² et p-value
-    sont directement interprétables.
-
-    Pour la langue naturelle, α ≈ 1 (loi de Zipf stricte).
-    α < 1 signifie une distribution plus étalée (vocabulaire riche).
-    α > 1 signifie une concentration plus forte sur les mots fréquents.
-
-    Retourne un dictionnaire avec C, α, R², p-value, std_alpha.
+    La fréquence prévue (Zipf frequency) dépend uniquement de la fréquence 
+    du mot le plus courant (rang 1).
+    Donc C = fréquence max, et alpha est strictement égal à 1.
     """
-    log_r = np.log(df["rang"].values.astype(float))
-    log_f = np.log(df["freq"].values.astype(float))
-
-    slope, intercept, r_value, p_value, std_err = linregress(log_r, log_f)
+    top_frequency = float(df.iloc[0]["freq"])
 
     return {
-        "C":         np.exp(intercept),
-        "alpha":     -slope,             # α = -pente dans log(f) = log(C) - α*log(r)
-        "R2":        r_value ** 2,
-        "p_value":   p_value,
-        "std_alpha": std_err,
+        "C":         top_frequency,
+        "alpha":     1.0,           
+        "R2":        np.nan,
+        "p_value":   np.nan,
+        "std_alpha": np.nan,
     }
 
 
@@ -151,58 +114,83 @@ def plot_zipf(
     params: dict,
     out_dir: pathlib.Path,
 ) -> None:
-    """
-    Génère deux graphiques sauvegardés en PDF :
-
-    - zipf_plot_absolu.pdf : fréquence vs rang en échelle linéaire.
-      Montre la forme caractéristique en L de la distribution de Zipf.
-
-    - zipf_plot_loglog.pdf : fréquence vs rang en échelle log-log.
-      La droite ajustée (pente = -α) confirme la conformité à la loi.
-      Une déviation dans les hauts rangs (mots rares) est normale.
-    """
-    C, alpha, r2 = params["C"], params["alpha"], params["R2"]
+    """Génère les graphiques d'analyse (échelle linéaire et log-log, avec et sans théorie)."""
+    C, alpha = params["C"], params["alpha"]
     ranks = df["rang"].values
     freqs = df["freq"].values
 
-    # Courbe ajustée
+    # Génération de la courbe théorique continue
     r_pred = np.linspace(ranks[0], ranks[-1], 500)
     f_pred = zipf_model(r_pred, C, alpha)
 
-    # Graphique 1 : échelle linéaire
+    # ─── ÉCHELLE LINÉAIRE ─────────────────────────────────────────────
+
+    # Graphique 1 : Échelle linéaire - SANS droite théorique
     fig, ax = plt.subplots(figsize=(10, 5))
     ax.plot(ranks, freqs, lw=1.5, color="#2c7bb6", label="Fréquences observées")
     ax.set_xlabel("Rang", fontsize=11)
     ax.set_ylabel("Fréquence", fontsize=11)
-    ax.set_title("Loi de Zipf — échelle linéaire", fontsize=12)
+    ax.set_title("Loi de Zipf — échelle linéaire (Données brutes)", fontsize=12)
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.35)
     plt.tight_layout()
     plt.savefig(str(out_dir / "zipf_plot_absolu.pdf"), format="pdf", bbox_inches="tight")
     plt.close()
-    print("  → zipf_plot_absolu.pdf")
+    print("  → zipf_plot_absolu.pdf (Sans courbe théorique)")
 
-    # Graphique 2 : log-log avec droite ajustée
+    # Graphique 2 : Échelle linéaire - AVEC droite théorique
     fig, ax = plt.subplots(figsize=(10, 5))
-    ax.loglog(ranks, freqs,
-              lw=1.5, color="#2c7bb6", label="Fréquences observées")
-    ax.loglog(r_pred, f_pred,
-              lw=2, ls="--", color="#d7191c",
-              label=f"Ajustement Zipf\nC={C:.2f}, α={alpha:.3f}, R²={r2:.4f}")
+    ax.plot(ranks, freqs, lw=1.5, color="#2c7bb6", label="Fréquences observées")
+    ax.plot(r_pred, f_pred, lw=2, ls="--", color="#d7191c", label=f"Modèle théorique (C={C:.0f}, α={alpha:.1f})")
+    ax.set_xlabel("Rang", fontsize=11)
+    ax.set_ylabel("Fréquence", fontsize=11)
+    ax.set_title("Loi de Zipf — échelle linéaire (Comparaison)", fontsize=12)
+    ax.legend(fontsize=9)
+    ax.grid(True, alpha=0.35)
+    plt.tight_layout()
+    plt.savefig(str(out_dir / "zipf_plot_absolu_theorique.pdf"), format="pdf", bbox_inches="tight")
+    plt.close()
+    print("  → zipf_plot_absolu_theorique.pdf (Avec courbe théorique)")
+
+
+    # ─── ÉCHELLE LOG-LOG ──────────────────────────────────────────────
+
+    # Graphique 3 : Log-Log - SANS droite théorique
+    fig, ax = plt.subplots(figsize=(10, 5))
+    ax.loglog(ranks, freqs, lw=1.5, color="#2c7bb6", label="Fréquences observées")
     ax.set_xlabel("log(Rang)", fontsize=11)
     ax.set_ylabel("log(Fréquence)", fontsize=11)
-    ax.set_title("Loi de Zipf — espace log-log\n(droite = conformité parfaite)",
-                 fontsize=12)
+    ax.set_title("Loi de Zipf — espace log-log (Données brutes)", fontsize=12)
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.35, which="both")
     plt.tight_layout()
     plt.savefig(str(out_dir / "zipf_plot_loglog.pdf"), format="pdf", bbox_inches="tight")
     plt.close()
-    print("  → zipf_plot_loglog.pdf")
+    print("  → zipf_plot_loglog.pdf (Sans droite théorique)")
+
+    # Graphique 4 : Log-Log - AVEC droite théorique
+    fig, ax = plt.subplots(figsize=(10, 5))
+    ax.loglog(ranks, freqs, lw=1.5, color="#2c7bb6", label="Fréquences observées")
+    ax.loglog(r_pred, f_pred, lw=2, ls="--", color="#d7191c", 
+              label=f"Ajustement Zipf \nC={C:.2f}, α={alpha:.3f}")
+    ax.set_xlabel("log(Rang)", fontsize=11)
+    ax.set_ylabel("log(Fréquence)", fontsize=11)
+    ax.set_title("Loi de Zipf — espace log-log (Comparaison)", fontsize=12)
+    ax.legend(fontsize=9)
+    ax.grid(True, alpha=0.35, which="both")
+    plt.tight_layout()
+    plt.savefig(str(out_dir / "zipf_plot_loglog_theorique.pdf"), format="pdf", bbox_inches="tight")
+    plt.close()
+    print("  → zipf_plot_loglog_theorique.pdf (Avec droite théorique)")
+
+
+# ==========================================================
+# PROGRAMME PRINCIPAL
+# ==========================================================
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Vérifie la loi de Zipf sur un corpus JSON et exporte les résultats."
+        description="Vérifie la loi de Zipf sur un corpus JSON."
     )
     parser.add_argument("corpus",
         help="Chemin vers le fichier corpus JSON.")
@@ -217,10 +205,8 @@ def main():
     args = parser.parse_args()
 
     out_dir     = pathlib.Path(args.output)
-    exclude_pos = set(args.exclude_pos)   # set() correct, pas {}
+    exclude_pos = set(args.exclude_pos)
     out_dir.mkdir(parents=True, exist_ok=True)
-
-    print("  LOI DE ZIPF — CORPUS")
 
     # ── 1. Chargement ─────────────────────────────────────────────────
     print("\n── 1. Chargement du corpus ───────────────────────────────")
@@ -242,29 +228,25 @@ def main():
     df = compute_zipf(lemmas)
     print(f"  Lemmes uniques : {len(df):,}")
     print("\n  Top 10 lemmes :")
-    print(df.head(10).to_string(index=False))
+    print(df.head(10)[["rang", "lemme", "freq"]].to_string(index=False))
 
-    # ── 3. Ajustement log-log ─────────────────────────────────────────
-    print("\n── 3. Ajustement log-log ─────────────────────────────────")
+    print("\n── 3. Application du modèle ──────────────────────────────")
     params = fit_zipf(df)
-    print(f"  C        = {params['C']:.4f}")
-    print(f"  α        = {params['alpha']:.4f}  (±{params['std_alpha']:.4f})   (≈ 1 attendu)")
-    print(f"  R²       = {params['R2']:.6f}")
-    print(f"  p        = {params['p_value']:.2e}")
+    print(f"  C (Fréq max) = {params['C']:.0f}")
+    print(f"  α (Alpha)    = {params['alpha']:.1f} (fixé par la méthode)")
 
-    alpha = params["alpha"]
-    if 0.8 <= alpha <= 1.2:
-        print(" α dans [0.8, 1.2] : conforme à la loi de Zipf")
-    elif alpha < 0.8:
-        print(" α < 0.8 : distribution plus étalée (vocabulaire riche)")
-    else:
-        print(" α > 1.2 : concentration plus forte sur les mots fréquents")
-
-    # ── 4. Export CSV ─────────────────────────────────────────────────
+    # ── 4. Calculs et Export CSV ──────────────────────────────────────
     print("\n── 4. Export CSV ─────────────────────────────────────────")
-    df["freq_predite"] = zipf_model(
-        df["rang"].values.astype(float), params["C"], params["alpha"]
-    ).astype(int)
+    
+    df["zipf_fraction"] = "1/" + df["rang"].astype(str)
+    df["freq_predite"] = params["C"] * (1 / df["rang"]) # zipf_frequency
+    df["difference_actuelle"] = df["freq"] - df["freq_predite"]
+    df["difference_pourcent"] = (df["freq"] / df["freq_predite"]) * 100
+
+    df["freq_predite"] = df["freq_predite"].round(2)
+    df["difference_actuelle"] = df["difference_actuelle"].round(2)
+    df["difference_pourcent"] = df["difference_pourcent"].round(2)
+
     df.to_csv(out_dir / "zipf_table.csv", index=False, encoding="utf-8-sig")
     print("  → zipf_table.csv")
 
