@@ -21,6 +21,7 @@ Fichiers de sortie principaux (à configurer via `OUTPUT_DIR` dans chaque script
 | `evolution_anglais_top6_par_annee.pdf`, `stats_anglais_top6.tex` | 04 |
 | `heatmap_langues_polonais_pct.pdf`, `heatmap_langues_polonais_n.pdf`, `table_langues_polonais_decennie.tex` | 05 |
 | Tableau LaTeX (console) | 06 |
+| `tableau_flux_nouveaux_auteurs.tex`  | 07 |
 
 ---
 
@@ -79,6 +80,14 @@ Script exploratoire, complémentaire de `05`. Son objectif est de tester si la f
 > le taux de multinationalité calculé par décennie (`pct_multinational`) est rapporté au nombre de relations auteur-publication, et non au nombre d'auteurs distincts. Cela gonfle légèrement les décennies les plus productives mais est cohérent avec l'approche des autres scripts.
 
 Sorties : tableaux imprimés en console ; aucun fichier exporté dans l'état actuel.
+
+---
+
+### `07_nationalite_nouveaux_auteurs.R` — Flux d'entrée dans le corpus par groupe de nationalité (tableau décennal)
+
+Script complémentaire de `03`, recentré sur la production du tableau LaTeX. À partir des mêmes sources MongoDB, il reconstitue pour chaque auteur l'année de sa première apparition dans le corpus et lui assigne un groupe de nationalité parmi cinq catégories analytiques (États-Unis, Royaume-Uni, France, nationalité non identifiée, autres). Le schème de pondération 1/N pour les auteurs plurinationaux est identique à celui de `03`. Les parts annuelles sont calculées sur l'ensemble des cinq groupes — y compris « Autre » — de sorte que leur somme soit exactement égale à 100 % pour chaque année ; un `stopifnot` en assure la vérification systématique. Les données sont ensuite agrégées par décennie (1975–2025), les parts étant recalculées sur les effectifs décennaux agrégés afin de préserver la cohérence entre numérateurs et dénominateurs. Le script ne produit aucun graphique.
+
+Sortie : `tableau_flux_nouveaux_auteurs.tex`.
 
 ---
 
