@@ -1,4 +1,4 @@
-# Analyse croisée LDA × réseau
+# Analyse LDA × réseau
 
 Ce dossier regroupe les scripts Python utilisés pour l'analyse croisée entre le modèle thématique LDA et la structure du réseau biparti auteurs-publications. Les données du réseau sont lues depuis des csv ; les données LDA sont lues depuis le dossier parent (`../output/`). Les trois scripts sont indépendants les uns des autres et peuvent être lancés dans n'importe quel ordre. La numérotation reflète la progression analytique : appariement des topics au réseau (`01`), test de sur/sous-représentation des topics par rapport au corpus propre (`02`), test de différence de centralité par topic (`03`).
 
@@ -30,7 +30,6 @@ Fichiers de sortie principaux :
 | `output/recapitulatif_khi2.csv`, `output/rapport_statistiques.txt` | 02 |
 | `output/kruskal/kruskal_summary.csv` | 03 |
 | `output/kruskal/heatmap_kruskal_synthese.png` | 03 |
-| `output/kruskal/violin_<métrique>_<scope>.png` | 03 |
 | `output/kruskal/rapport_kruskal.txt` | 03 |
 
 ---
@@ -68,9 +67,9 @@ Pour chaque indicateur de centralité et chaque sous-corpus (réseau entier / CC
 - H₀ : les distributions de centralité sont identiques entre tous les topics.
 - H₁ : au moins un topic présente une distribution différente.
 
-La taille d'effet est mesurée par ε² = H / ((n²−1) / (n+1)), avec les seuils suivants : ε² ≥ 0,01 (petit), ≥ 0,06 (moyen), ≥ 0,14 (grand). Les indicateurs testés sont : `degree`, `weighted degree`, `betweenesscentrality`, `eigencentrality`, `closnesscentrality`, `harmonicclosnesscentrality`. Pour chaque test significatif (p < `ALPHA`, par défaut `0.05`), un violin plot est exporté avec les médianes annotées et les effectifs par topic en abscisse. Une heatmap synthétique présente les p-values (−log₁₀) et les tailles d'effet ε² pour l'ensemble des tests.
+La taille d'effet est mesurée par ε² = H / ((n²−1) / (n+1)), avec les seuils suivants : ε² ≥ 0,01 (petit), ≥ 0,06 (moyen), ≥ 0,14 (grand). Les indicateurs testés sont : `degree`, `weighted degree`, `betweenesscentrality`, `eigencentrality`, `closnesscentrality`, `harmonicclosnesscentrality`. Une heatmap synthétique présente les p-values (−log₁₀) et les tailles d'effet ε² pour l'ensemble des tests.
 
-Sorties : `output/kruskal/kruskal_summary.csv`, `output/kruskal/heatmap_kruskal_synthese.png`, `output/kruskal/violin_<métrique>_<scope>.png` (tests significatifs uniquement), `output/kruskal/rapport_kruskal.txt`.
+Sorties : `output/kruskal/kruskal_summary.csv`, `output/kruskal/heatmap_kruskal_synthese.png`, `output/kruskal/rapport_kruskal.txt`.
 
 ---
 
