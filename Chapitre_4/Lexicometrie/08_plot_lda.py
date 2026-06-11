@@ -1,10 +1,13 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-  SCRIPT 08 — VISUALISATION TEMPORELLE DU MODÈLE LDA
+  SCRIPT 08 — VISUALISATION DU MODÈLE LDA
 
-Lit les fichiers produits par 07_LDA_k.py et génère deux graphiques
-d'évolution temporelle :
+Lit les fichiers produits par 07_LDA_k.py et génère :
+
+  1. Graphiques d'évolution temporelle (moyenne de γ par année, sans
+     seuil de présence — Griffiths & Steyvers, 2004)
+
+  2. Visualisation interactive HTML (pyLDAvis) à ouvrir dans un
+     navigateur (optionnel — nécessite pip install pyldavis)
 
 SORTIES
 -------
@@ -12,29 +15,30 @@ SORTIES
     topic_mean_gamma_by_year.csv        ← moyenne de γ par topic et par année
     05_ruptures_courbes_individuelles.pdf
     06_evolution_globale_stacked.pdf
+    ldavis.html                         ← si pyLDAvis est installé
 
 STRUCTURE ATTENDUE
 ------------------
   <dossier du script>/
   ├── output/topic_modelling/
-  │   ├── gamma_df.csv        ← produit par 07_LDA_k.py
-  │   └── topics_lda.csv      ← produit par 07_LDA_k.py
+  │   ├── gamma_df.csv            ← produit par 07_LDA_k.py
+  │   ├── topics_lda.csv          ← produit par 07_LDA_k.py
+  │   └── lda_model/              ← produit par 07_LDA_k.py
+  │       ├── lda.model
+  │       └── dictionary.gensim
   ├── output/corpus_propre/corpus_propre.json
-  └── meta_lemmatisation.csv  ← optionnel, pour les années
+  ├── stopwords-en.txt
+  └── meta_lemmatisation.csv      ← optionnel, pour les années
 
-USAGE
------
-  python 08_plot_LDA.py
 
 PRÉ-REQUIS
 ----------
-  python 07_LDA_k.py   → output/topic_modelling/gamma_df.csv
-                          output/topic_modelling/topics_lda.csv
+  python 07_LDA_k.py
 
 DÉPENDANCES
 -----------
   pip install numpy pandas matplotlib seaborn ruptures
-=======================================================================
+  pip install pyldavis   ← optionnel, pour ldavis.html
 """
 
 import json
@@ -47,18 +51,27 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import ruptures as rpt
 
-# ──────────────────────────────────────────────────────────────────────
-#  CONFIGURATION
-# ──────────────────────────────────────────────────────────────────────
-
 BASE_DIR = pathlib.Path(__file__).resolve().parent
 
-CORPUS_JSON = BASE_DIR / "output" / "corpus_propre" / "corpus_propre.json"
-META_CSV    = BASE_DIR / "meta_lemmatisation.csv"
+CORPUS_JSON    = BASE_DIR / "output" / "corpus_propre" / "corpus_propre.json"
+STOPWORDS_PATH = BASE_DIR / "stopwords-en.txt"
+META_CSV       = BASE_DIR / "meta_lemmatisation.csv"
 
+MODEL_DIR  = BASE_DIR / "output" / "topic_modelling" / "lda_model"
 OUT_DIR    = BASE_DIR / "output" / "topic_modelling"
 GAMMA_CSV  = OUT_DIR / "gamma_df.csv"
 TOPICS_CSV = OUT_DIR / "topics_lda.csv"
+
+# Identiques à 07_LDA_k.py — NE PAS MODIFIER
+EXCLUDE_POS = ["PUNCT", "CCONJ", "DET", "ADP", "PRON", "PART", "SCONJ",
+               "SPACE", "SYM", "NUM", "X", "AUX", "INTJ"]
+
+EXCLUDE_TOKENS = ["-", "--", "…", "'s", "n't", "'re", "'ve", "'d", "'ll",
+                  "https", "http", "see", "however", "also", "university",
+                  "die", "von", "der", "den", "zur", "lo", "di", "lot",
+                  "o6p", "xl", "dq", "на", "g6", "g12", "iii", "ap", "rrr", "rr",
+                  "wkh", "oc", "robert", "kerala", "bäyrämova", "torigni",
+                  "avranches", "dl", "……", "reproduction", "tí", "press", "walter"]
 
 MANUAL_PENALTY = 15
 LINE_COLOR     = "#2c7bb6"
@@ -78,7 +91,6 @@ def load_years(n_docs):
     while len(years) < n_docs:
         years.append(None)
     return pd.to_numeric(pd.Series(years), errors="coerce")
-
 
 if __name__ == "__main__":
 
@@ -102,10 +114,6 @@ if __name__ == "__main__":
     print(f"  {len(gamma_df)} documents avec année "
           f"({gamma_df['year'].min()}–{gamma_df['year'].max()})")
 
-    # ── Moyenne de γ par année ─────────────────────────────────────────
-    # Griffiths & Steyvers (2004) calculent directement la moyenne de θ_j
-    # par année sur les valeurs continues, sans seuil de présence :
-    # "we conducted a linear trend analysis on θ_j by year"
     df_mean = gamma_df.groupby("year")[topic_cols].mean()
     df_mean = df_mean.sort_index()
     df_mean.to_csv(OUT_DIR / "topic_mean_gamma_by_year.csv",
@@ -209,4 +217,55 @@ if __name__ == "__main__":
     plt.close()
     print("  → 06_evolution_globale_stacked.pdf")
 
-    print(f"\n Terminé — {num_topics} topics | {len(gamma_df)} documents avec année")
+    print(f"\nTerminé — {num_topics} topics | {len(gamma_df)} documents avec année")
+
+    # ── pyLDAvis (optionnel) ───────────────────────────────────────────
+    print("\n── pyLDAvis ──────────────────────────────────────────────────")
+    try:
+        import pyLDAvis
+        import pyLDAvis.gensim_models as gensimvis
+        from gensim.models import LdaModel
+        from gensim import corpora
+        from lexploreur.corpus import lexical_view
+    except ImportError as e:
+        print(f"  [IGNORÉ] {e}")
+        print("  Installez pyLDAvis avec : pip install pyldavis")
+    else:
+        model_path = MODEL_DIR / "lda.model"
+        dict_path  = MODEL_DIR / "dictionary.gensim"
+        if not model_path.exists() or not dict_path.exists():
+            print(f"  [IGNORÉ] Modèle introuvable dans {MODEL_DIR}")
+            print("  Lancez d'abord 07_LDA_k.py")
+        else:
+            print("  Chargement du modèle et reconstruction du corpus …")
+            lda_model  = LdaModel.load(str(model_path))
+            dictionary = corpora.Dictionary.load(str(dict_path))
+
+            with open(STOPWORDS_PATH, encoding="utf-8", errors="replace") as f:
+                stopwords = [line.strip() for line in f if line.strip()]
+
+            df_lv = lexical_view(
+                str(CORPUS_JSON),
+                feature_to_extract = "lemma",
+                stopwords          = stopwords,
+                lowercase          = True,
+                exclude_pos        = EXCLUDE_POS,
+                exclude_tokens     = EXCLUDE_TOKENS,
+            )
+            df_lv["lemma"] = df_lv["lemma"].apply(
+                lambda tokens: [t for t in tokens if len(t) > 1]
+            )
+            corpus_bow = [dictionary.doc2bow(tokens) for tokens in df_lv["lemma"]]
+
+            print("  Préparation pyLDAvis (1–3 min selon la taille du corpus) …")
+            vis_data = gensimvis.prepare(
+                lda_model,
+                corpus_bow,
+                dictionary,
+                sort_topics = True,
+                mds         = "mmds",
+                n_jobs      = 1,
+            )
+            out_html = OUT_DIR / "ldavis.html"
+            pyLDAvis.save_html(vis_data, str(out_html))
+            print(f"  → ldavis.html")
