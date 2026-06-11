@@ -1,0 +1,21 @@
+Lemme: council | Mode: positif | Seuil: 1.5
+church: 100.0000
+bishop: 100.0000
+aulic: 100.0000
+lachowitz: 89.0456
+lateran: 76.2833
+war: 64.3290
+norwegian: 59.6352
+curial: 58.0045
+östa: 56.3755
+exp: 48.4964
+canon: 46.5915
+1686: 46.1316
+bd: 45.8321
+fourth: 38.9262
+prot: 38.4297
+hkr: 38.4297
+concilios: 33.8512
+pope: 32.6938
+toledo: 31.1346
+1685: 29.6697

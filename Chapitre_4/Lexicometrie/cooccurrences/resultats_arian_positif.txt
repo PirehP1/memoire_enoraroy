@@ -1,0 +1,21 @@
+Lemme: arian | Mode: positif | Seuil: 1.5
+bishop: 100.0000
+barbarian: 100.0000
+nicene: 100.0000
+episcopus: 100.0000
+maximinus: 96.4289
+arians: 95.0972
+sigesarius: 90.5948
+gothic: 89.1892
+philostorgius: 74.8323
+anonymous: 74.4666
+bleda: 70.3621
+bishops: 69.3715
+selenas: 69.1774
+silvanus: 61.2256
+vandal: 60.5375
+leovigild: 56.8381
+goths: 55.9858
+church: 54.5505
+ulfila: 52.6491
+cyrila: 51.7990

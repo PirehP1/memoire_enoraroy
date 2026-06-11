@@ -1,0 +1,21 @@
+Lemme: arabic | Mode: positif | Seuil: 1.5
+literary: 100.0000
+islamic: 100.0000
+permission: 100.0000
+persian: 100.0000
+arab: 100.0000
+ragib: 100.0000
+muhadarat: 100.0000
+anthology: 100.0000
+greek: 99.1463
+poetry: 94.4585
+manuscript: 92.7372
+prohibit: 92.0607
+averroes: 90.2234
+rahat: 82.7935
+reproduction: 79.0250
+copyright: 78.3287
+ibn: 78.0972
+owner: 72.7865
+compilation: 71.2877
+chapter: 69.0245

@@ -1,0 +1,21 @@
+Lemme: castle | Mode: positif | Seuil: 1.5
+site: 100.0000
+settlement: 100.0000
+wall: 100.0000
+slavic: 100.0000
+ñ: 100.0000
+locate: 100.0000
+specie: 100.0000
+poland: 100.0000
+flora: 100.0000
+tower: 100.0000
+teutonic: 100.0000
+deer: 100.0000
+commander: 100.0000
+fortify: 100.0000
+outer: 100.0000
+co.: 100.0000
+toruń: 100.0000
+concave: 100.0000
+bezławki: 100.0000
+gemach: 100.0000

@@ -1,0 +1,21 @@
+Lemme: divorce | Mode: positif | Seuil: 1.5
+marriage: 53.5812
+latin: 44.6716
+iorwerth: 42.2451
+pryce: 37.7192
+welsh: 29.6301
+bleg: 28.6588
+wife: 19.9500
+wlw: 19.8687
+redaction: 18.7922
+passage: 18.0621
+tractate: 15.2072
+shame: 14.4158
+native: 14.2993
+cyfnerth: 13.4689
+party: 12.8164
+bieu: 12.2391
+arbitration: 11.6678
+text: 11.5128
+redactor: 11.2979
+law: 10.9013

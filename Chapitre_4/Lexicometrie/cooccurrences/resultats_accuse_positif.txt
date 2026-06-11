@@ -1,0 +1,21 @@
+Lemme: accuse | Mode: positif | Seuil: 1.5
+person: 100.0000
+absent: 100.0000
+accusation: 100.0000
+accuser: 100.0000
+confrontation: 90.7713
+col: 85.9992
+d.: 77.8230
+criminal: 73.9785
+ordeal: 73.8918
+trial: 67.2325
+defendant: 66.0802
+absence: 63.2349
+va.: 63.0790
+heinonline: 62.2318
+witness: 60.0145
+adversary: 57.5630
+must: 51.6840
+convict: 51.1923
+presence: 45.8171
+int: 45.1805

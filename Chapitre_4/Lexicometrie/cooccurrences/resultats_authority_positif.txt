@@ -1,0 +1,21 @@
+Lemme: authority | Mode: positif | Seuil: 1.5
+temporal: 100.0000
+church: 87.3742
+power: 83.9104
+vitoria: 82.9898
+religious: 80.7390
+political: 64.6540
+pope: 63.5366
+suarez: 58.2174
+bishop: 58.0639
+secular: 55.8037
+papal: 53.2975
+ecclesiastical: 48.9640
+law: 48.5817
+exercise: 46.5705
+spiritual: 44.5375
+trafficking: 42.1072
+episcopal: 35.2945
+wyrd: 35.2371
+imperial: 33.6263
+metropolitan: 33.2327

@@ -1,0 +1,21 @@
+Lemme: chronicle | Mode: positif | Seuil: 1.5
+anglo: 100.0000
+saxon: 100.0000
+russian: 100.0000
+annal: 100.0000
+robert: 94.6233
+chronicler: 92.5390
+genealogy: 75.8962
+alfred‟: 62.9679
+avranches: 62.4602
+annals: 61.5345
+source: 60.9198
+manasses: 60.4008
+vernacular: 59.1549
+waltham: 55.3201
+lilla: 53.2569
+king: 52.5607
+159: 50.8290
+chronicorum: 49.6810
+stafford: 48.8810
+bately: 47.8693

@@ -1,0 +1,21 @@
+Lemme: enemy | Mode: positif | Seuil: 1.5
+battle: 64.8917
+defeat: 45.1411
+army: 45.0559
+war: 43.4487
+fight: 43.2080
+volkan: 25.3359
+romanticism: 24.0958
+attack: 23.6547
+overdiep: 22.0658
+hostile: 20.4933
+owini: 20.2902
+victory: 19.7359
+force: 19.4729
+jews: 19.1409
+antipope: 18.2217
+esther: 17.3430
+sverrir: 17.2487
+military: 17.2296
+tatars: 16.9613
+psalm: 16.9088

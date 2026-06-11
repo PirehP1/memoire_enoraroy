@@ -1,0 +1,21 @@
+Lemme: fool | Mode: positif | Seuil: 1.5
+folly: 100.0000
+ape: 95.9876
+devil: 87.2924
+natural: 86.8818
+falstaff: 70.0201
+black: 66.7773
+blackface: 65.4631
+blackfaced: 63.4278
+moros: 62.9961
+wager: 48.0441
+oed: 45.1408
+parodist: 45.1190
+ingnorance: 45.0376
+wit: 41.0059
+blackness: 40.8798
+foolish: 34.7936
+comic: 33.4291
+insipien: 31.7220
+sambo: 30.7705
+radice: 30.1879

@@ -1,0 +1,21 @@
+Lemme: accuser | Mode: positif | Seuil: 1.5
+accuse: 100.0000
+absent: 100.0000
+col: 100.0000
+d.: 99.6505
+accusation: 57.6734
+person: 55.5055
+convict: 52.2680
+va.: 49.9710
+decretales: 49.6146
+heinonline: 48.2805
+absence: 46.7265
+1994: 43.4178
+confrontation: 42.4536
+adversary: 40.8516
+int: 38.6736
+hear: 32.1086
+law: 31.3488
+trial: 31.2758
+defendant: 31.1298
+accusator: 28.4515

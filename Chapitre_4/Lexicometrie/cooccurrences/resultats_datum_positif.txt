@@ -1,0 +1,21 @@
+Lemme: datum | Mode: positif | Seuil: 1.5
+analysis: 100.0000
+archaeological: 100.0000
+sample: 100.0000
+radiocarbon: 100.0000
+value: 98.8561
+use: 76.9982
+sequence: 76.4879
+genetic: 76.0732
+population: 75.3754
+available: 73.2512
+chronological: 69.4201
+data: 66.1456
+borough: 65.9861
+individual: 64.2713
+diet: 61.5498
+avar: 59.5148
+isotope: 58.0259
+statistical: 57.5373
+site: 56.6180
+dna: 56.4504

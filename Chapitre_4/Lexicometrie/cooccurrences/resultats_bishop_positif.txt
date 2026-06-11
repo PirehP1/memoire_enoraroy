@@ -1,0 +1,21 @@
+Lemme: bishop | Mode: positif | Seuil: 1.5
+church: 100.0000
+emperor: 100.0000
+council: 100.0000
+episcopal: 100.0000
+arian: 100.0000
+philostorgius: 100.0000
+metropolitan: 100.0000
+nicene: 100.0000
+gregory: 99.3562
+constantius: 84.0386
+theophilus: 82.5680
+pope: 80.7169
+bishops: 79.3258
+presbyter: 78.3959
+barbarian: 76.5426
+gallus: 75.4233
+diocese: 74.0210
+authority: 73.0215
+ecclesiastical: 71.1639
+hilary: 68.0420

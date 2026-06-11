@@ -1,0 +1,21 @@
+Lemme: fabric | Mode: positif | Seuil: 1.5
+ware: 100.0000
+pottery: 100.0000
+glaze: 100.0000
+clay: 100.0000
+glazed: 100.0000
+sgraffito: 100.0000
+zeuxippus: 100.0000
+petrographic: 100.0000
+slip: 97.3308
+sample: 96.0225
+bowl: 89.5463
+white: 83.4746
+vessel: 79.7359
+fragment: 62.5143
+waksman: 61.9851
+production: 60.9008
+liard: 56.4448
+euboia: 56.0712
+ib: 52.8906
+rim: 52.6493

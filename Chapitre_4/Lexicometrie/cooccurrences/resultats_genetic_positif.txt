@@ -1,0 +1,21 @@
+Lemme: genetic | Mode: positif | Seuil: 1.5
+group: 100.0000
+individual: 100.0000
+population: 100.0000
+slavic: 100.0000
+migration: 100.0000
+ancestry: 100.0000
+genome: 100.0000
+admixture: 100.0000
+ia: 100.0000
+analysis: 99.2101
+component: 95.1706
+ancient: 90.9923
+dna: 87.8849
+european: 78.7487
+gene: 72.7584
+supplementary: 71.7053
+ma: 70.4041
+sample: 69.4482
+croatian: 68.2343
+file: 60.0686

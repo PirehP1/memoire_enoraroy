@@ -1,0 +1,21 @@
+Lemme: fibula | Mode: positif | Seuil: 1.5
+werner: 100.0000
+bow: 100.0000
+class: 92.5887
+buckle: 88.6562
+fibulae: 75.8797
+brooch: 56.8352
+anchialos: 40.4858
+burial: 38.6720
+nea: 37.2517
+cosoveni: 31.8081
+grave: 29.1319
+slavic: 26.5493
+pi: 25.5315
+fragment: 25.0454
+plate: 24.9235
+katsougiannopoulou: 20.6468
+garment: 20.4386
+avar: 19.6919
+assemblage: 18.9044
+ornamental: 18.6581

@@ -1,0 +1,21 @@
+Lemme: black | Mode: positif | Seuil: 1.5
+slave: 100.0000
+white: 100.0000
+blackness: 100.0000
+african: 88.6743
+africans: 68.1218
+slavery: 61.2270
+blackface: 55.7387
+grey: 51.9783
+fool: 51.1463
+race: 49.1591
+racial: 46.9313
+mm: 37.6524
+enslave: 34.6350
+africa: 33.1730
+sea: 32.7204
+negro: 31.5211
+colour: 30.4612
+trade: 30.2597
+ham: 28.6098
+racism: 27.5831

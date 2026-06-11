@@ -1,0 +1,21 @@
+Lemme: fibulae | Mode: positif | Seuil: 1.5
+slavic: 100.0000
+bow: 100.0000
+brooch: 96.3823
+werner: 92.5855
+dress: 72.9192
+female: 53.7184
+class: 51.6837
+curta: 46.0377
+fibula: 42.7538
+florin: 42.6561
+greece: 41.1645
+buckle: 37.2366
+specimen: 36.3943
+anchialos: 28.2593
+emblemic: 27.3246
+nea: 25.7513
+ornamental: 25.1916
+beaucamp: 25.1539
+burial: 25.1494
+pi: 23.4128

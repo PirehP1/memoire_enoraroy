@@ -1,0 +1,21 @@
+Lemme: chironomid | Mode: positif | Seuil: 1.5
+lake: 100.0000
+temperature: 100.0000
+stella: 100.0000
+midge: 100.0000
+mjat: 100.0000
+taxon: 78.2858
+reconstruction: 75.8493
+porinchu: 73.2117
+holocene: 65.1879
+fossil: 61.7716
+cwynar: 60.1023
+inference: 59.0256
+overland: 54.7378
+heiri: 51.5740
+depth: 51.0513
+core: 49.4195
+larocque: 49.3768
+capsule: 47.4856
+paleolimnology: 46.7048
+sediment: 46.4539

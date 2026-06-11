@@ -1,0 +1,21 @@
+Lemme: cynewulf | Mode: positif | Seuil: 1.5
+cross: 100.0000
+elene: 60.6605
+dream: 34.5330
+poem: 32.0394
+rood: 31.9977
+invention: 29.6678
+text: 26.8786
+latin: 21.9928
+tree: 19.0565
+constantine: 17.3122
+narrative: 16.8417
+vision: 16.2196
+helen: 15.9537
+exegetical: 15.7944
+ac: 15.3818
+intertextual: 14.6527
+english: 14.4702
+celestial: 14.1994
+sign: 14.1184
+emblem: 14.1034

@@ -1,0 +1,21 @@
+Lemme: cult | Mode: positif | Seuil: 1.5
+saint: 100.0000
+st: 100.0000
+katherine: 100.0000
+helena: 88.4701
+martyrial: 56.4530
+mamilianus: 54.3615
+relic: 52.9014
+pagan: 50.9575
+church: 47.7188
+senzius: 47.0474
+legend: 42.7981
+sanctuary: 41.1463
+hungarian: 40.6942
+calendar: 39.5228
+veneration: 38.6798
+martyr: 35.8779
+statue: 33.6503
+blera: 32.5934
+upper: 30.6052
+antonsson: 28.9790

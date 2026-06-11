@@ -1,0 +1,21 @@
+Lemme: ancestry | Mode: positif | Seuil: 1.5
+age: 100.0000
+individual: 100.0000
+population: 100.0000
+relate: 100.0000
+model: 100.0000
+slavic: 100.0000
+genetic: 100.0000
+genome: 100.0000
+supplementary: 100.0000
+admixture: 100.0000
+cne: 100.0000
+eia: 100.0000
+pca: 98.9505
+wbi: 94.3028
+scandinavian: 90.0828
+ia: 89.8171
+component: 86.5270
+northern: 82.1466
+european: 81.8745
+extended: 77.9682

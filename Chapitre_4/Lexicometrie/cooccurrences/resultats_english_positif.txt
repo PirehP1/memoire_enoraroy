@@ -1,0 +1,21 @@
+Lemme: english | Mode: positif | Seuil: 1.5
+middle: 100.0000
+old: 100.0000
+england: 100.0000
+anglo: 100.0000
+saxon: 100.0000
+translation: 100.0000
+poem: 100.0000
+norman: 100.0000
+henry: 100.0000
+beowulf: 100.0000
+welsh: 100.0000
+wales: 100.0000
+brunanburh: 100.0000
+normans: 99.9234
+language: 97.1559
+london: 88.0481
+william: 71.4030
+romance: 66.2793
+british: 64.5786
+gawain: 61.9359

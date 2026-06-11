@@ -1,0 +1,21 @@
+Lemme: buckle | Mode: positif | Seuil: 1.5
+grave: 100.0000
+ring: 100.0000
+bow: 100.0000
+fibula: 100.0000
+corinth: 99.9529
+type: 91.2014
+pi: 83.9445
+belt: 79.4544
+burial: 63.5397
+werner: 57.4993
+silver: 55.0586
+find: 55.0047
+graf: 50.0149
+class: 48.3172
+plate: 43.9223
+5/2011: 43.7485
+botivo: 41.4095
+iovia: 38.0047
+tigani: 37.0647
+strap: 35.2910

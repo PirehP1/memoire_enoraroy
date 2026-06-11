@@ -1,0 +1,21 @@
+Lemme: christ | Mode: positif | Seuil: 1.5
+god: 100.0000
+image: 100.0000
+jews: 100.0000
+cross: 100.0000
+jesus: 100.0000
+passion: 100.0000
+virtus: 100.0000
+crucifixion: 100.0000
+juvencus: 100.0000
+holy: 97.0589
+christian: 90.7029
+scene: 87.6303
+psalter: 84.1713
+wilgefortis: 82.3410
+symbol: 75.3031
+body: 71.1918
+mary: 68.5046
+church: 67.6381
+crucify: 64.4020
+faith: 64.0432

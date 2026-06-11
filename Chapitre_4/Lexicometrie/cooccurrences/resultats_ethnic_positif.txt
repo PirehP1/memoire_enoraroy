@@ -1,0 +1,21 @@
+Lemme: ethnic | Mode: positif | Seuil: 1.5
+group: 100.0000
+identity: 100.0000
+identification: 100.0000
+ethnicity: 100.0000
+pohl: 100.0000
+people: 81.6163
+origin: 80.1782
+social: 58.2717
+strategies: 57.2712
+tejerizo: 47.7208
+garcía: 46.6487
+nation: 45.2052
+ladin: 41.8432
+cultural: 37.9137
+hungarian: 37.1494
+-group: 36.4604
+distinction: 36.2312
+visigothic: 34.9320
+migration: 34.8282
+community: 34.1655

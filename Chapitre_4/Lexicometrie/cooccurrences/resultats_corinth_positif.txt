@@ -1,0 +1,21 @@
+Lemme: corinth | Mode: positif | Seuil: 1.5
+ware: 100.0000
+pottery: 100.0000
+glazed: 100.0000
+sanders: 81.8280
+buckle: 73.5533
+thessaloniki: 73.2386
+glaze: 72.7025
+late: 70.2751
+williams: 65.4159
+athens: 64.4890
+byzantine: 58.9117
+frankish: 53.1621
+sgraffito: 52.3395
+hesperia: 48.3741
+lead: 47.7382
+waksman: 47.3314
+greece: 39.2729
+zervos: 39.1765
+fabric: 38.8188
+ivison: 33.6735

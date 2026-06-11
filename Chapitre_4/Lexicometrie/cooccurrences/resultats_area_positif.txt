@@ -1,0 +1,21 @@
+Lemme: area | Mode: positif | Seuil: 1.5
+site: 100.0000
+settlement: 100.0000
+building: 100.0000
+survey: 100.0000
+valley: 100.0000
+region: 86.8239
+small: 77.8848
+villa: 72.5939
+road: 69.6506
+lake: 67.5794
+period: 65.7021
+locate: 65.4624
+south: 64.9894
+urban: 64.7017
+river: 64.1150
+excavation: 63.1252
+tiber: 59.9103
+large: 59.6358
+rural: 58.3728
+potenza: 57.9304

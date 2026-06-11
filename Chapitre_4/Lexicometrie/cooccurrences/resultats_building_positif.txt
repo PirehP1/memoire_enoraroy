@@ -1,0 +1,21 @@
+Lemme: building | Mode: positif | Seuil: 1.5
+area: 100.0000
+house: 100.0000
+build: 100.0000
+method: 100.0000
+propose: 100.0000
+collapse: 100.0000
+damage: 100.0000
+earthquake: 100.0000
+structural: 100.0000
+extract: 100.0000
+extraction: 100.0000
+intact: 100.0000
+morphological: 100.0000
+svm: 100.0000
+ecognition: 100.0000
+volume8,2020: 100.0000
+element: 94.9577
+wall: 89.0751
+construction: 83.9014
+disk: 82.9440

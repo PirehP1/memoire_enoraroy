@@ -1,0 +1,21 @@
+Lemme: aldhelm | Mode: positif | Seuil: 1.5
+grant: 100.0000
+malmesbury: 100.0000
+opera: 100.0000
+lapidge: 100.0000
+ehwald: 100.0000
+aldhelmi: 100.0000
+herren: 100.0000
+charter: 92.3549
+edwards: 87.3038
+helm: 83.7958
+ald: 79.8437
+saxon: 75.6707
+caedwalla: 71.7934
+wilfrid: 68.9845
+king: 66.4534
+ine: 64.7277
+centwine: 58.6140
+hlothhere: 57.4990
+theodore: 56.7356
+kelly: 54.2614

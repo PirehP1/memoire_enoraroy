@@ -1,0 +1,21 @@
+Lemme: conversion | Mode: positif | Seuil: 1.5
+convert: 100.0000
+́fr: 100.0000
+christianity: 98.6132
+christian: 84.6547
+jews: 65.3860
+missionary: 65.0468
+ari: 63.5142
+saga: 60.7620
+tryggvason: 58.0561
+alþing: 55.5756
+miracle: 54.2280
+traditions: 48.9689
+pagan: 41.3520
+jewish: 38.0319
+adam: 37.5426
+king: 35.4845
+faith: 35.2061
+iceland: 35.0826
+́slendingabó: 34.1094
+poppo: 33.7775

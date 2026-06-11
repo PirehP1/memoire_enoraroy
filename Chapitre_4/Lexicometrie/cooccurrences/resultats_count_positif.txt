@@ -1,0 +1,21 @@
+Lemme: count | Mode: positif | Seuil: 1.5
+duke: 93.2089
+louis: 67.2931
+lothar: 55.2332
+patrician: 53.1956
+abbot: 46.5437
+corvey: 43.8932
+warin: 42.8174
+adalbert: 41.8765
+auxerre: 41.6563
+rector: 33.6947
+hatto: 28.8854
+bardo: 27.4147
+deigan: 27.2165
+vjzelay: 25.8984
+dukes: 25.2887
+839: 25.0797
+ecbertiner: 24.6296
+manzoni: 23.1129
+hattonid: 23.0764
+saxony: 22.9402

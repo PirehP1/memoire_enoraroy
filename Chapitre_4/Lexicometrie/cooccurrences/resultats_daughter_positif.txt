@@ -1,0 +1,21 @@
+Lemme: daughter | Mode: positif | Seuil: 1.5
+woman: 100.0000
+son: 100.0000
+child: 100.0000
+wife: 100.0000
+father: 100.0000
+tale: 100.0000
+marriage: 100.0000
+mother: 100.0000
+lot: 100.0000
+desire: 100.0000
+walter: 100.0000
+incest: 100.0000
+marry: 100.0000
+genesis: 100.0000
+griselda: 100.0000
+euphrosyne: 100.0000
+incestuous: 100.0000
+pafnuntius: 100.0000
+clerk: 97.7176
+family: 96.9837

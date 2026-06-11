@@ -1,0 +1,21 @@
+Lemme: coin | Mode: positif | Seuil: 1.5
+silver: 100.0000
+mint: 100.0000
+deposit: 100.0000
+hoard: 100.0000
+coinage: 100.0000
+roman: 81.7496
+group: 66.4944
+bronze: 63.6654
+gold: 62.0590
+find: 55.3129
+moneyer: 53.4580
+issue: 49.7517
+rome: 40.0887
+coins: 37.8795
+late: 37.8541
+date: 37.3884
+number: 36.8805
+reverse: 33.6045
+reece: 32.7473
+small: 32.1484

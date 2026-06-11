@@ -1,0 +1,21 @@
+Lemme: burial | Mode: positif | Seuil: 1.5
+grave: 100.0000
+cemetery: 100.0000
+graf: 100.0000
+tomb: 100.0000
+villa: 100.0000
+funerary: 100.0000
+transitional: 99.9367
+site: 95.1048
+date: 90.1751
+avar: 85.3444
+cremation: 81.9519
+buckle: 74.9102
+individual: 74.3484
+neville: 74.1470
+bury: 68.7839
+period: 66.2348
+inhumation: 64.1780
+scythian: 61.6318
+eaa.2020.37: 58.8199
+fibulae: 58.3978

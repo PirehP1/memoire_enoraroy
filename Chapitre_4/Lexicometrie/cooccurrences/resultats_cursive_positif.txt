@@ -1,0 +1,21 @@
+Lemme: cursive | Mode: positif | Seuil: 1.5
+write: 45.4107
+hand: 39.7225
+writing: 32.2190
+stroke: 27.7499
+hajnal: 20.9642
+gloss: 19.4529
+legibility: 16.5856
+book: 16.5760
+kittay: 16.1823
+kufic: 15.2567
+speed: 13.8023
+uncial: 13.7064
+naskh: 12.8904
+script: 12.4947
+miniscule: 11.7370
+speedy: 11.7370
+pen: 11.3687
+jeffrey: 11.1958
+scripture: 11.1444
+midway: 11.0294

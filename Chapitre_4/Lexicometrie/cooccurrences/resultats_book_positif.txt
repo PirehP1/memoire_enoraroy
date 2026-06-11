@@ -1,0 +1,21 @@
+Lemme: book | Mode: positif | Seuil: 1.5
+manuscript: 100.0000
+chapter: 100.0000
+prayer: 100.0000
+gospel: 100.0000
+read: 79.5752
+episcopal: 73.8421
+print: 71.8934
+text: 59.5553
+write: 58.4788
+work: 54.7875
+consecration: 54.1476
+mandeville: 49.2853
+anglorum: 48.8982
+huizinga: 47.6059
+exeter: 45.1287
+liturgical: 44.7075
+english: 43.5352
+domesday: 43.3841
+library: 39.8375
+orderic: 38.5322

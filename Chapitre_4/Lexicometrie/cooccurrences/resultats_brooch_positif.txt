@@ -1,0 +1,21 @@
+Lemme: brooch | Mode: positif | Seuil: 1.5
+fibulae: 100.0000
+werner: 88.4614
+ornamental: 87.8467
+terminal: 85.0453
+bow: 74.2956
+type: 68.4883
+metalwork: 60.7326
+decoration: 58.3714
+class: 57.8887
+anchialos: 52.8219
+fibula: 52.8015
+moretto: 52.2455
+buckle: 52.0702
+burial: 48.7959
+nea: 47.7967
+find: 47.7315
+grave: 47.6656
+filigree: 43.0799
+penannular: 39.6765
+footplate: 36.1716

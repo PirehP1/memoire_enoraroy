@@ -1,0 +1,21 @@
+Lemme: archaeology | Mode: positif | Seuil: 1.5
+saxon: 100.0000
+journal: 100.0000
+archaeological: 100.0000
+institute: 100.0000
+department: 100.0000
+neville: 93.2555
+british: 86.1995
+̈rke: 75.7829
+migration: 70.0824
+report: 68.4103
+research: 67.1423
+anglo: 64.6044
+early: 61.0819
+roman: 57.7943
+history: 50.2169
+britain: 50.1477
+archaeologist: 47.1485
+https: 46.8389
+obsequies: 46.8070
+excavation: 46.7695

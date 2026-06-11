@@ -1,0 +1,21 @@
+Lemme: basin | Mode: positif | Seuil: 1.5
+great: 100.0000
+lake: 100.0000
+climate: 100.0000
+temperature: 100.0000
+carpathian: 100.0000
+subalpine: 100.0000
+porinchu: 95.4134
+avar: 92.8828
+reconstruction: 76.3886
+szenthe: 73.0462
+states: 73.0323
+merano: 69.3736
+alpine: 69.0253
+united: 63.3480
+gáll: 63.1197
+central: 60.1782
+valley: 60.1587
+chironomid: 59.0293
+7th–10th: 57.4443
+reinemann: 56.8058

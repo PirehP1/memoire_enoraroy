@@ -1,0 +1,21 @@
+Lemme: duke | Mode: positif | Seuil: 1.5
+patrician: 100.0000
+dukes: 100.0000
+fredegar: 98.8172
+francorum: 89.5174
+regnum: 85.3698
+lb: 82.4654
+ducal: 78.4408
+odilo: 66.7555
+pepin: 64.1780
+count: 60.5388
+bavarian: 55.0870
+lombard: 54.8989
+rector: 52.4098
+grimoald: 48.7691
+king: 45.5996
+euryant: 44.1816
+duchy: 43.8696
+austrasia: 42.3628
+ducatus: 38.6577
+charles: 37.4826

@@ -1,0 +1,21 @@
+Lemme: battle | Mode: positif | Seuil: 1.5
+henry: 100.0000
+army: 100.0000
+brunanburh: 100.0000
+fight: 97.5916
+defeat: 91.9539
+trousers: 80.4183
+troop: 74.3837
+cavalry: 71.1559
+victory: 65.0821
+jordanes: 59.3964
+harold: 51.8684
+warrior: 49.1923
+english: 46.6657
+force: 42.0498
+war: 41.9084
+sverrir: 41.2160
+combat: 39.3574
+herodotean: 38.2914
+woman: 36.8334
+warfare: 36.0672

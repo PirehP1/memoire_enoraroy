@@ -1,0 +1,21 @@
+Lemme: ecclesiastical | Mode: positif | Seuil: 1.5
+church: 100.0000
+bishop: 85.8096
+bede: 83.0697
+secular: 80.9246
+philostorgius: 80.8206
+deer: 33.7666
+nisp: 29.2080
+jurisdiction: 28.5761
+vitalis: 27.1761
+patriarchate: 27.0232
+eligi: 25.8261
+history: 24.6284
+jurisdictional: 24.0995
+episcopal: 24.0534
+merovingian: 23.2093
+colgrave: 23.1054
+royal: 23.0295
+chibnall: 22.5108
+law: 22.4839
+dado: 21.6384

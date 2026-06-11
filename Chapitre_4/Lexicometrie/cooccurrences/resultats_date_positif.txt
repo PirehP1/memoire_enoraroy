@@ -1,0 +1,21 @@
+Lemme: date | Mode: positif | Seuil: 1.5
+period: 100.0000
+site: 100.0000
+ad: 100.0000
+burial: 100.0000
+grave: 100.0000
+graf: 100.0000
+radiocarbon: 100.0000
+14c: 100.0000
+fell: 100.0000
+phase: 88.5572
+felling: 87.8048
+datum: 86.1774
+dating: 81.3203
+early: 76.5992
+cremation: 76.4610
+chronological: 76.3059
+avar: 73.2397
+chronology: 70.0389
+calibrate: 68.0163
+manuscript: 66.9299

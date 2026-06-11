@@ -1,0 +1,21 @@
+Lemme: defendant | Mode: positif | Seuil: 1.5
+witness: 100.0000
+criminal: 100.0000
+testimony: 80.7566
+procedure: 80.2554
+accuse: 77.8489
+confrontation: 73.5174
+va.: 66.9502
+1994: 61.8023
+heinonline: 58.6726
+judge: 55.1414
+prosecution: 51.6760
+int: 51.1406
+court: 47.9765
+testify: 45.2615
+inquisition: 45.1607
+accuser: 42.6994
+law: 38.7372
+trial: 38.6056
+inquisitional: 36.8874
+clause: 33.0083
