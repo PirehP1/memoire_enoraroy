@@ -1,0 +1,21 @@
+Lemme: result | Mode: positif | Seuil: 1.5
+sample: 100.0000
+method: 100.0000
+borough: 100.0000
+farm: 100.0000
+building: 82.4330
+grants: 79.8548
+svm: 66.6633
+extraction: 63.9999
+collapse: 63.9010
+table: 63.0700
+coefficient: 62.7872
+sne: 52.9009
+column: 50.2433
+ecognition: 50.1735
+propose: 46.2577
+analysis: 44.7347
+intact: 44.5185
+datum: 43.7890
+grant: 40.0287
+mesne: 38.9473

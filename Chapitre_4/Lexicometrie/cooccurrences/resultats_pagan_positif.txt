@@ -1,0 +1,21 @@
+Lemme: pagan | Mode: positif | Seuil: 1.5
+christian: 100.0000
+god: 100.0000
+christians: 100.0000
+paganism: 100.0000
+christianity: 94.2995
+temple: 93.3087
+religious: 86.3607
+deity: 84.8154
+religion: 83.3590
+idol: 78.5367
+pagans: 77.1469
+angel: 70.7931
+church: 70.0350
+messenger: 67.0637
+rękawka: 60.0674
+worship: 54.5743
+conversion: 49.3405
+statue: 39.7541
+faith: 37.3743
+attitude: 34.2646

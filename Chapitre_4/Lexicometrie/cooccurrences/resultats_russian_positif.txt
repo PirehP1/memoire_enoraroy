@@ -1,0 +1,21 @@
+Lemme: russian | Mode: positif | Seuil: 1.5
+mongol: 100.0000
+mongols: 100.0000
+golden: 100.0000
+tatar: 100.0000
+tatars: 100.0000
+horde: 100.0000
+russia: 100.0000
+moscow: 100.0000
+soviet: 100.0000
+russians: 100.0000
+nauka: 100.0000
+kazan: 89.8288
+aryan: 87.8417
+myth: 75.8167
+rus: 74.1578
+leningrad: 71.3251
+russo: 67.1016
+istorii: 59.6624
+publ: 59.2959
+vv: 56.7492

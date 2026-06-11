@@ -1,0 +1,21 @@
+Lemme: sgraffito | Mode: positif | Seuil: 1.5
+late: 100.0000
+ware: 100.0000
+fine: 100.0000
+fabric: 100.0000
+×: 100.0000
+glaze: 100.0000
+glazed: 100.0000
+zeuxippus: 100.0000
+murky: 100.0000
+polychrome: 100.0000
+yellow: 98.7302
+pottery: 96.8595
+abandonment: 92.5286
+fill: 83.9040
+slip: 79.2653
+corinth: 75.4112
+bowl: 70.6955
+post: 55.0838
+white: 52.9755
+monochrome: 51.6450

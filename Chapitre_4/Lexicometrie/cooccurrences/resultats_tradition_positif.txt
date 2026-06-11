@@ -1,0 +1,21 @@
+Lemme: tradition | Mode: positif | Seuil: 1.5
+oral: 100.0000
+classical: 60.0548
+literary: 57.1402
+runic: 52.3651
+manuscript: 51.2713
+ermanarich: 47.5189
+christian: 43.9011
+text: 42.7466
+religious: 40.1621
+narrative: 37.3544
+epi: 36.5164
+graphical: 35.5109
+textual: 35.5023
+legal: 34.0962
+latin: 31.1055
+deor: 30.7451
+vernacular: 30.2513
+blackface: 30.2493
+performance: 29.1347
+rune: 28.5027

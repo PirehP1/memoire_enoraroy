@@ -1,0 +1,21 @@
+Lemme: temple | Mode: positif | Seuil: 1.5
+pagan: 100.0000
+rebuild: 82.9740
+destruction: 81.2714
+ankara: 79.2659
+church: 77.8036
+julian: 73.1394
+jerusalem: 66.3850
+augustus: 61.7114
+city: 59.5781
+wall: 48.9408
+cella: 47.3627
+sanctuary: 44.0047
+build: 43.3091
+antique: 39.8049
+destroy: 37.8692
+temenos: 37.5763
+inscription: 35.8837
+peristasis: 35.6419
+shrine: 34.0977
+late: 33.6286

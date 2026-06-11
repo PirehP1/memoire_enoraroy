@@ -1,0 +1,21 @@
+Lemme: rector | Mode: positif | Seuil: 1.5
+duke: 60.1162
+patrician: 52.2960
+aspiciat: 32.5641
+count: 28.3858
+tuam: 26.8248
+dominus: 26.1577
+benedicat: 23.4670
+dukes: 22.5500
+official: 21.7288
+francorum: 21.4350
+te: 21.2475
+deus: 20.2509
+clementissime: 18.9546
+tuorum: 17.4510
+dicat: 17.1129
+regnum: 15.8807
+office: 15.4382
+pater: 15.2272
+bene-: 15.1162
+domine: 14.8100

@@ -1,0 +1,21 @@
+Lemme: tatars | Mode: positif | Seuil: 1.5
+source: 100.0000
+mongol: 100.0000
+muslim: 100.0000
+russian: 100.0000
+mongols: 100.0000
+tatar: 100.0000
+khan: 100.0000
+rus: 100.0000
+horde: 100.0000
+armenian: 100.0000
+batunskii: 100.0000
+polovtsy: 99.6760
+term: 89.6747
+name: 73.5625
+chinggis: 73.3609
+pechenegs: 71.4830
+people: 71.0718
+turkic: 70.2940
+golden: 68.5248
+tribe: 66.8737

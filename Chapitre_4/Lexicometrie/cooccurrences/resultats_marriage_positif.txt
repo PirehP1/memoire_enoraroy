@@ -1,0 +1,21 @@
+Lemme: marriage | Mode: positif | Seuil: 1.5
+woman: 100.0000
+wife: 100.0000
+daughter: 100.0000
+walter: 100.0000
+marry: 100.0000
+freedwoman: 100.0000
+griselda: 91.6969
+manumission: 83.2293
+incest: 67.1619
+bride: 65.3268
+soy: 62.5367
+freedom: 58.9401
+consent: 57.1265
+slave: 55.7960
+husband: 54.1384
+sexual: 51.8528
+family: 46.9777
+clandestine: 46.0597
+mckee: 44.8452
+dowry: 43.1880

@@ -1,0 +1,21 @@
+Lemme: woman | Mode: positif | Seuil: 1.5
+man: 100.0000
+power: 100.0000
+image: 100.0000
+wife: 100.0000
+female: 100.0000
+male: 100.0000
+marriage: 100.0000
+husband: 100.0000
+gender: 100.0000
+sexual: 100.0000
+medical: 100.0000
+women: 100.0000
+practitioner: 100.0000
+dutch: 97.7878
+mff: 97.3990
+feminine: 96.1313
+midwife: 95.3806
+young: 92.1456
+sabine: 78.9460
+care: 77.4310

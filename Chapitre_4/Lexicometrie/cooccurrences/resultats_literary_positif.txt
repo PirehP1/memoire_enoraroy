@@ -1,0 +1,21 @@
+Lemme: literary | Mode: positif | Seuil: 1.5
+literature: 100.0000
+arabic: 96.8323
+text: 63.8756
+persian: 63.1923
+author: 51.9269
+muhadarat: 51.0702
+anthology: 50.1974
+lope: 49.4789
+compilation: 43.7944
+language: 43.4399
+saga: 43.3287
+jón: 43.0866
+classical: 42.7189
+poetry: 40.8554
+poem: 38.8576
+write: 36.8478
+permission: 34.8578
+grammatica: 34.3801
+textuality: 32.9827
+oral: 31.5444

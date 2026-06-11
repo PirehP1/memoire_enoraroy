@@ -1,0 +1,21 @@
+Lemme: material | Mode: positif | Seuil: 1.5
+creative: 100.0000
+commons: 100.0000
+credit: 100.0000
+licence: 100.0000
+license: 89.6622
+source: 86.6443
+supplementary: 80.8371
+raw: 74.9479
+sharing: 64.2434
+format: 62.5568
+archaeological: 61.1057
+indicate: 54.2810
+faunal: 51.3016
+beglane: 50.8676
+fiona: 47.7789
+distribution: 45.3468
+excavation: 40.4284
+glass: 38.1497
+site: 37.4432
+adaptation: 37.4349

@@ -1,0 +1,21 @@
+Lemme: poet | Mode: positif | Seuil: 1.5
+poem: 100.0000
+poetry: 100.0000
+lot: 100.0000
+beowulf: 100.0000
+cursor: 100.0000
+mundi: 77.9255
+claudian: 77.2816
+exodus: 76.1508
+sodom: 69.6860
+phoenix: 63.6859
+english: 61.4815
+poetic: 61.4454
+genesis: 59.0186
+ovid: 58.8623
+daughter: 56.7473
+verse: 47.7629
+exodus-: 47.1564
+line: 45.8737
+anglo: 45.2276
+satirical: 43.4323

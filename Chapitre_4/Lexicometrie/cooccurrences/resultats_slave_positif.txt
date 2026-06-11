@@ -1,0 +1,21 @@
+Lemme: slave | Mode: positif | Seuil: 1.5
+trade: 100.0000
+master: 100.0000
+black: 100.0000
+free: 100.0000
+slavery: 100.0000
+market: 100.0000
+raid: 100.0000
+sell: 100.0000
+captive: 100.0000
+buy: 100.0000
+trafficking: 100.0000
+enslave: 100.0000
+portuguese: 100.0000
+japanese: 100.0000
+enslavement: 100.0000
+salvian: 100.0000
+manumission: 100.0000
+slaveholder: 100.0000
+suicide: 99.8578
+enslaver: 93.8613

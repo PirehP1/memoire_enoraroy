@@ -1,0 +1,21 @@
+Lemme: vulgar | Mode: positif | Seuil: 1.5
+latin: 100.0000
+concept: 100.0000
+cittadini: 100.0000
+castelvetro: 100.0000
+variety: 61.9881
+bruni: 54.9332
+lingua: 51.2454
+1572: 49.9837
+italian: 49.7713
+barrius: 45.8817
+valla: 45.8050
+ancient: 39.3296
+linguistic: 38.7560
+1714: 36.5073
+vulgaris: 36.5070
+1601: 34.1269
+biondo: 34.0452
+josefeskhult: 33.5974
+language: 32.4694
+latina: 32.2340

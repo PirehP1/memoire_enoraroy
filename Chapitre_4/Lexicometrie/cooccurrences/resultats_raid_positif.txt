@@ -1,0 +1,21 @@
+Lemme: raid | Mode: positif | Seuil: 1.5
+slave: 100.0000
+viking: 100.0000
+captive: 79.6579
+raider: 50.5896
+trade: 47.4037
+annals: 47.2372
+trafficking: 45.0106
+enslavement: 40.1203
+vikings: 39.4557
+attack: 36.3292
+frisian: 35.8810
+magyars: 27.8390
+ninth: 26.7286
+francia: 26.1538
+prisoner: 26.1300
+capture: 25.1980
+lublin: 24.6162
+frisia: 24.5595
+border: 23.8311
+ulster: 23.5073

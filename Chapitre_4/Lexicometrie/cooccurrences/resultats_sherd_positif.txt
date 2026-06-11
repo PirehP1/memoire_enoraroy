@@ -1,0 +1,21 @@
+Lemme: sherd | Mode: positif | Seuil: 1.5
+mm: 100.0000
+amphora: 100.0000
+abrade: 95.0909
+bodysherd: 88.2023
+ware: 86.4446
+fabricb3: 75.1151
+vessel: 69.3012
+pottery: 59.5442
+site: 57.7785
+rim: 57.2649
+body: 53.5085
+tile: 51.1316
+lrpw: 45.7798
+fabric: 45.1984
+misc: 43.9808
+cm: 39.9706
+trail: 39.4287
+area: 37.8766
+white: 32.2784
+trench: 32.1327

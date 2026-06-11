@@ -1,0 +1,21 @@
+Lemme: irish | Mode: positif | Seuil: 1.5
+ireland: 100.0000
+dublin: 100.0000
+gerald: 100.0000
+ulysses: 100.0000
+macneill: 100.0000
+gaelic: 95.3140
+wales: 70.2398
+native: 67.7307
+celtic: 65.3811
+loanword: 64.6199
+word: 59.6967
+troy: 59.3737
+togail: 56.7932
+exclusive: 56.1819
+eoin: 54.7029
+early: 54.0496
+eoinmacneill: 53.4171
+ahlqvist: 53.0599
+orpen: 51.4283
+english: 50.7883

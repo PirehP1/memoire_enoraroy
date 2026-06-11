@@ -1,0 +1,21 @@
+Lemme: viking | Mode: positif | Seuil: 1.5
+age: 100.0000
+norse: 100.0000
+scandinavian: 100.0000
+scandinavia: 100.0000
+vikings: 100.0000
+frisian: 100.0000
+frisia: 100.0000
+frisians: 86.5724
+dublin: 83.1218
+romanticism: 78.5723
+film: 74.5324
+ireland: 73.7204
+ninth: 60.3268
+raid: 60.3237
+irish: 58.3980
+ancestry: 57.9955
+scandinavians: 55.3133
+danish: 54.7499
+ship: 54.6126
+ijssennagger: 53.8294

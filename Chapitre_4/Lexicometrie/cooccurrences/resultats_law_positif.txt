@@ -1,0 +1,21 @@
+Lemme: law | Mode: positif | Seuil: 1.5
+common: 100.0000
+legal: 100.0000
+natural: 100.0000
+canon: 100.0000
+judge: 100.0000
+justice: 100.0000
+lombard: 100.0000
+custom: 100.0000
+lex: 100.0000
+criminal: 100.0000
+jury: 100.0000
+customary: 100.0000
+lb: 100.0000
+court: 98.2281
+welsh: 97.5368
+rule: 94.7123
+procedure: 94.0289
+code: 93.7336
+alemannic: 90.6640
+arbitration: 88.6673

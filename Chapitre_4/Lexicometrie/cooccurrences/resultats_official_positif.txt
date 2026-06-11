@@ -1,0 +1,21 @@
+Lemme: official | Mode: positif | Seuil: 1.5
+#: 100.0000
+silver: 100.0000
+elect: 100.0000
+mint: 100.0000
+sv: 100.0000
+borough: 96.6200
+gr: 90.3154
+estimo: 86.4361
+dq: 82.8312
+mc: 76.7739
+prosopography: 61.8648
+weigher: 60.2249
+venetian: 59.8735
+xl: 57.9600
+estimator: 57.0836
+mar.: 54.9984
+oct.: 53.9346
+rösch: 51.7804
+farm: 50.9940
+nicolo: 50.4486

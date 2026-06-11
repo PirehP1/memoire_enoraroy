@@ -1,0 +1,21 @@
+Lemme: radiocarbon | Mode: positif | Seuil: 1.5
+date: 100.0000
+ad: 100.0000
+grave: 100.0000
+cemetery: 100.0000
+graf: 100.0000
+avar: 100.0000
+chronological: 100.0000
+ramsey: 95.1341
+period: 88.6835
+bronk: 87.6410
+datum: 86.8837
+tiszafüred: 84.0486
+cal: 83.3900
+carpathian: 82.6892
+7th–10th: 81.8225
+phase: 75.9099
+chronology: 75.0805
+basin: 74.7826
+ams: 70.2653
+sample: 69.7380

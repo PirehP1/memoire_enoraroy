@@ -1,0 +1,21 @@
+Lemme: legal | Mode: positif | Seuil: 1.5
+law: 100.0000
+ladin: 100.0000
+tironian: 100.0000
+pluralism: 99.0770
+arbitration: 89.9569
+lex: 88.8547
+customary: 74.7865
+court: 70.6452
+system: 70.2210
+punishment: 61.6625
+judicial: 59.1871
+jurisdiction: 57.2349
+secular: 54.7160
+infamia: 53.1068
+custom: 52.5373
+justice: 48.5031
+judge: 47.9433
+8543: 45.7973
+1971-: 45.4880
+rule: 44.7477

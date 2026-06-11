@@ -1,0 +1,21 @@
+Lemme: mary | Mode: positif | Seuil: 1.5
+jews: 100.0000
+christ: 100.0000
+jewish: 100.0000
+st: 100.0000
+mother: 100.0000
+virgin: 100.0000
+miracle: 100.0000
+jew: 100.0000
+annunciation: 95.1267
+jesus: 86.9492
+tale: 82.2244
+devil: 75.3243
+blessed: 56.4158
+altar: 55.3879
+virginity: 54.7831
+immaculate: 50.3752
+woman: 49.4418
+birth: 48.6732
+anne: 45.3229
+confraternity: 41.8963

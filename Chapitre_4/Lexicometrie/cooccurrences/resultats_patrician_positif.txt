@@ -1,0 +1,21 @@
+Lemme: patrician | Mode: positif | Seuil: 1.5
+duke: 100.0000
+rector: 77.9946
+count: 59.9562
+dukes: 53.8808
+francorum: 52.3839
+fredegar: 41.0916
+official: 40.0681
+regnum: 39.3575
+provence: 33.0372
+optimate: 32.7015
+merovingian: 28.5152
+name: 17.2086
+burgundy: 16.7330
+leudegarii: 16.1289
+dagobert: 15.4870
+gregory: 15.3065
+govern: 14.6128
+definite: 14.4402
+tours: 14.3710
+office: 14.0106

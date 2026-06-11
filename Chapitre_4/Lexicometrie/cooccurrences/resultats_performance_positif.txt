@@ -1,0 +1,21 @@
+Lemme: performance | Mode: positif | Seuil: 1.5
+text: 100.0000
+play: 100.0000
+audience: 100.0000
+biblical: 100.0000
+criticism: 100.0000
+shakespeare: 100.0000
+oral: 92.6714
+dance: 76.2417
+perform: 72.6094
+theatrical: 68.1373
+apprehend: 63.3322
+worthen: 59.8377
+groundlings: 53.2619
+performer: 52.1870
+41.2: 50.7271
+nt: 48.7548
+actor: 47.1359
+music: 41.4849
+shiner: 39.3495
+interpretation: 37.2271

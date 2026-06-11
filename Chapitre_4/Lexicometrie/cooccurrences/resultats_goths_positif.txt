@@ -1,0 +1,21 @@
+Lemme: goths | Mode: positif | Seuil: 1.5
+roman: 100.0000
+barbarian: 100.0000
+gothic: 100.0000
+romans: 97.8154
+bishop: 84.2878
+goth: 74.4417
+ammianus: 73.4679
+visigothic: 69.5496
+arian: 60.1641
+jordanes: 59.7590
+ulfila: 54.9770
+valens: 51.2109
+theodoric: 47.0388
+heather: 44.1443
+huns: 40.4530
+getica: 38.4672
+cassiodorus: 38.0008
+vandal: 36.5004
+ethnic: 35.8409
+ermenaric: 33.3505

@@ -1,0 +1,21 @@
+Lemme: state | Mode: positif | Seuil: 1.5
+ulus: 100.0000
+chinggisid: 100.0000
+political: 98.2582
+mongol: 76.0048
+hyperesiai: 65.7750
+ohio: 64.5221
+irgen: 54.4117
+kereyid: 51.9664
+nation: 50.6252
+mongqol: 50.0081
+krader: 47.4976
+law: 46.7887
+realm: 46.4836
+yeke: 45.9450
+policy: 45.4536
+empire: 44.1782
+ruler: 41.2563
+federal: 40.6852
+1206: 37.8913
+chair: 37.6849

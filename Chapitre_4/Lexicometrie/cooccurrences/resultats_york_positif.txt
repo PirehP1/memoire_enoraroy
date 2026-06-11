@@ -1,0 +1,21 @@
+Lemme: york | Mode: positif | Seuil: 1.5
+new: 100.0000
+london: 100.0000
+history: 95.4656
+medieval: 87.0915
+berlin: 77.5086
+studies: 71.2707
+art: 66.9230
+ages: 63.8927
+women: 61.2372
+american: 58.2217
+religion: 55.6575
+routledge: 51.6132
+john: 48.3647
+chicago: 43.9147
+david: 40.6709
+middle: 39.6051
+essays: 35.8376
+james: 34.6271
+adams: 34.4640
+jonathan: 34.2687

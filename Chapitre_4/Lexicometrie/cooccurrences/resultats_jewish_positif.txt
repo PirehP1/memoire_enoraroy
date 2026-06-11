@@ -1,0 +1,21 @@
+Lemme: jewish | Mode: positif | Seuil: 1.5
+christian: 100.0000
+jews: 100.0000
+christians: 100.0000
+christianity: 100.0000
+tale: 100.0000
+miracle: 100.0000
+anti: 100.0000
+jew: 100.0000
+judaism: 100.0000
+antisemitism: 100.0000
+benamozegh: 100.0000
+rosenzweig: 100.0000
+israel: 94.3170
+jerusalem: 86.7418
+convert: 86.2096
+mary: 83.6435
+devil: 81.4557
+disputation: 78.8850
+jesus: 69.6098
+emancipation: 66.5177

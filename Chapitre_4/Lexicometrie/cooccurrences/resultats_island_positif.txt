@@ -1,0 +1,21 @@
+Lemme: island | Mode: positif | Seuil: 1.5
+sicily: 100.0000
+plant: 100.0000
+medicinal: 100.0000
+britain: 98.9401
+muslims: 75.3916
+specie: 60.2379
+łuczajetal: 57.3996
+adriatic: 55.5318
+may2021|volume12|article623070: 52.5397
+cave: 52.2270
+pharmacology|www.frontiersin.org: 50.4951
+insulae: 49.4569
+archipelago: 49.1728
+interview: 47.0647
+sea: 45.6256
+norman: 44.3158
+pharmacopoeia: 38.8242
+mainland: 38.0857
+anchialine: 38.0385
+lond: 34.3251

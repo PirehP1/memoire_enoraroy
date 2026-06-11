@@ -1,0 +1,21 @@
+Lemme: human | Mode: positif | Seuil: 1.5
+animal: 100.0000
+bone: 100.0000
+isotope: 100.0000
+isotopic: 82.2677
+plos: 74.4250
+natural: 70.3119
+value: 67.8130
+/doi.org/10.1371: 67.1306
+divine: 60.9487
+diet: 59.0574
+trafficking: 58.6550
+body: 58.1188
+plosone|https: 57.7578
+dna: 57.4434
+nude: 56.7899
+god: 54.8837
+nature: 51.6972
+±: 50.2360
+stable: 49.4014
+dietary: 48.1073

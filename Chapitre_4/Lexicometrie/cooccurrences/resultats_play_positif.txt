@@ -1,0 +1,21 @@
+Lemme: play | Mode: positif | Seuil: 1.5
+role: 100.0000
+performance: 100.0000
+shakespeare: 100.0000
+drama: 100.0000
+game: 94.6677
+sabine: 88.4295
+theatrical: 58.4796
+theatre: 54.2263
+wit: 48.8954
+text: 46.3009
+perform: 45.8622
+bodel: 44.7966
+jeu: 42.8575
+playwright: 42.3050
+audience: 38.9475
+fool: 37.5958
+elizabethan: 36.9535
+folly: 36.8579
+everyman: 36.3448
+theater: 36.2325

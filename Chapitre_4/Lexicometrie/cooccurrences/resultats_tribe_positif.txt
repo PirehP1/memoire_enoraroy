@@ -1,0 +1,21 @@
+Lemme: tribe | Mode: positif | Seuil: 1.5
+germanic: 100.0000
+britons: 100.0000
+vortigern: 100.0000
+tribal: 100.0000
+attila: 84.1624
+tatars: 81.6625
+huns: 78.0974
+hunnic: 60.9802
+saxonum: 59.3138
+gildas: 59.2312
+adventus: 54.8794
+people: 50.2807
+barbarian: 46.2350
+mongol: 45.8753
+tatar: 43.7799
+nennius: 41.2662
+romans: 41.0872
+roman: 38.8222
+empire: 38.2618
+bede: 35.3024

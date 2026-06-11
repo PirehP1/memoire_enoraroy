@@ -1,0 +1,21 @@
+Lemme: mongol | Mode: positif | Seuil: 1.5
+empire: 100.0000
+russian: 100.0000
+mongols: 100.0000
+persian: 100.0000
+tatar: 100.0000
+tatars: 100.0000
+khan: 100.0000
+armenian: 100.0000
+baghdad: 100.0000
+ulus: 100.0000
+mongolian: 100.0000
+irgen: 100.0000
+chinggis: 100.0000
+mongqol: 100.0000
+1206: 100.0000
+yeke: 100.0000
+mongolia: 93.7896
+people: 92.8308
+horde: 88.8681
+allsen: 86.6606

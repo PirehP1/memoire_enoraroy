@@ -1,0 +1,21 @@
+Lemme: henry | Mode: positif | Seuil: 1.5
+king: 100.0000
+english: 100.0000
+william: 100.0000
+norman: 100.0000
+battle: 100.0000
+falstaff: 100.0000
+brunanburh: 100.0000
+huntingdon: 100.0000
+tiller: 100.0000
+greenway: 99.9926
+normans: 93.0080
+anglorum: 91.6522
+rigg: 87.6596
+britons: 81.6739
+northmen: 69.4030
+hal: 68.8052
+england: 58.0227
+robert: 57.9086
+anglo: 55.1085
+twelfth: 54.5722

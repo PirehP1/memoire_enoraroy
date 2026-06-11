@@ -1,0 +1,21 @@
+Lemme: literature | Mode: positif | Seuil: 1.5
+medieval: 100.0000
+arabic: 100.0000
+literary: 94.2995
+english: 93.1845
+poetry: 56.6772
+popular: 51.4307
+old: 50.9216
+icelandic: 49.0727
+miltenova: 48.9921
+study: 48.7503
+language: 45.5779
+modern: 42.6320
+studies: 42.0027
+ulysses: 41.3448
+zaimova: 38.8590
+tăpkova: 37.0175
+classical: 33.5018
+apocalyptic: 32.9634
+incest: 32.0293
+middle: 29.2271

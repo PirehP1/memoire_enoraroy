@@ -1,0 +1,21 @@
+Lemme: public | Mode: positif | Seuil: 1.5
+private: 100.0000
+walter: 36.9258
+heritage: 33.0822
+marriage: 31.0621
+hyperesiai: 27.5055
+goldoni: 27.0361
+griselda: 21.2284
+property: 18.9802
+government: 18.4880
+franco: 17.4085
+privacy: 17.1183
+woman: 17.0624
+law: 16.9831
+civic: 16.8738
+macneill: 15.8748
+personal: 15.4977
+rękawka: 15.1680
+dalmatian: 13.7336
+copenhague: 13.3123
+political: 13.2823

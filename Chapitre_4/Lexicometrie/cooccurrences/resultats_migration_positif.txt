@@ -1,0 +1,21 @@
+Lemme: migration | Mode: positif | Seuil: 1.5
+population: 100.0000
+genetic: 97.1043
+̈rke: 85.8786
+ancestry: 59.4078
+slavic: 57.0249
+europe: 54.4125
+archaeology: 45.3033
+grave: 44.1412
+pleše: 42.8666
+archaeological: 42.5823
+germanic: 42.1627
+tajana: 39.4696
+franjić: 39.4696
+nađ: 38.9257
+howe: 38.5880
+wave: 38.5253
+novak: 37.5855
+genome: 37.5400
+archaeologist: 37.4078
+miroslav: 35.4064

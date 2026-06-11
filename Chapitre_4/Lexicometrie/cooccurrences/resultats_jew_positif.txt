@@ -1,0 +1,21 @@
+Lemme: jew | Mode: positif | Seuil: 1.5
+christian: 100.0000
+jews: 100.0000
+jewish: 100.0000
+tale: 100.0000
+convert: 100.0000
+miracle: 100.0000
+devil: 100.0000
+host: 100.0000
+mary: 97.1890
+text: 87.6831
+jesus: 78.3214
+truth: 72.8460
+skb: 69.0064
+converted: 68.4930
+icon: 67.1764
+exempla: 61.1754
+christ: 53.8377
+moneylender: 52.5508
+virgin: 46.4666
+converts: 44.4591

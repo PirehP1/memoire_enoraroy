@@ -1,0 +1,21 @@
+Lemme: man | Mode: positif | Seuil: 1.5
+god: 100.0000
+woman: 100.0000
+wife: 100.0000
+young: 100.0000
+husband: 100.0000
+sexual: 89.8586
+dat: 76.8661
+good: 73.9495
+hennetaster: 71.6950
+female: 60.2187
+pant: 56.6772
+say: 56.4794
+lot: 55.4153
+male: 53.6197
+masculinity: 52.6749
+ende: 48.9392
+impotent: 45.6004
+one: 44.0775
+scene: 43.8113
+deponent: 43.5448

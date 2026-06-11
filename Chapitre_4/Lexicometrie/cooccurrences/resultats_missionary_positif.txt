@@ -1,0 +1,21 @@
+Lemme: missionary | Mode: positif | Seuil: 1.5
+mission: 100.0000
+boniface: 100.0000
+caste: 100.0000
+kerala: 100.0000
+cms: 100.0000
+lms: 82.8855
+station: 75.5995
+people: 69.2215
+church: 60.3446
+willibrord: 58.6437
+selwyn: 56.6605
+lovedale: 55.0210
+christian: 51.5639
+school: 50.0913
+african: 48.6930
+conversion: 48.5239
+angli: 45.2263
+convert: 40.7075
+favour: 39.0959
+́fr: 38.0631

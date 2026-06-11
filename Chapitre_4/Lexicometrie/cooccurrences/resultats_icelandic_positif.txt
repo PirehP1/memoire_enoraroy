@@ -1,0 +1,21 @@
+Lemme: icelandic | Mode: positif | Seuil: 1.5
+language: 100.0000
+saga: 100.0000
+iceland: 100.0000
+icelanders: 92.3155
+norse: 83.3771
+norwegian: 79.2528
+jón: 61.5083
+jónsson: 60.2005
+arngrímur: 56.9575
+aðils: 51.6714
+árni: 45.7364
+old: 45.5588
+icelander: 43.4087
+author: 39.2131
+scandinavian: 38.3747
+og: 37.2400
+literature: 36.4650
+́fr: 36.2783
+helgason: 35.7366
+njáls: 33.4877

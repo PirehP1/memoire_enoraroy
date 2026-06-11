@@ -1,0 +1,21 @@
+Lemme: muslim | Mode: positif | Seuil: 1.5
+christian: 100.0000
+islamic: 100.0000
+muslims: 100.0000
+sicily: 100.0000
+islam: 100.0000
+christians: 88.2770
+hui: 84.9036
+rus: 78.1323
+batunskii: 76.1206
+tatars: 75.8370
+ibn: 74.1858
+arabic: 72.5410
+commercial: 55.7475
+-andalus: 55.5723
+arbitration: 55.1836
+religious: 55.0559
+goryeo: 54.0910
+merchant: 52.6113
+anti: 52.1021
+arab: 48.7134

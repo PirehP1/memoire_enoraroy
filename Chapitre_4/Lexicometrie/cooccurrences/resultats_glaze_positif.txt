@@ -1,0 +1,21 @@
+Lemme: glaze | Mode: positif | Seuil: 1.5
+lead: 100.0000
+ware: 100.0000
+pottery: 100.0000
+green: 100.0000
+fabric: 100.0000
+ceramic: 100.0000
+clay: 100.0000
+glazed: 100.0000
+slip: 100.0000
+sgraffito: 100.0000
+oxide: 100.0000
+alumina: 94.6070
+corinthian: 88.6567
+sample: 86.1500
+yellow: 81.0159
+silica: 80.1614
+firing: 79.7075
+aluminum: 78.8577
+composition: 77.9722
+surface: 72.7295

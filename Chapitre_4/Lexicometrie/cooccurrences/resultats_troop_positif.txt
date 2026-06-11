@@ -1,0 +1,21 @@
+Lemme: troop | Mode: positif | Seuil: 1.5
+army: 100.0000
+battle: 90.7679
+soldier: 49.1130
+ottoman: 46.2939
+military: 43.9019
+attack: 37.8369
+volunteer: 32.0198
+force: 29.7041
+defeat: 26.7746
+commander: 25.7085
+-munyawi: 23.4339
+winter: 23.4087
+command: 23.3287
+berber: 22.4298
+send: 22.0955
+jund: 21.5801
+sebastianus: 20.5863
+fight: 20.0565
+eorodcistum: 20.0400
+river: 19.4093

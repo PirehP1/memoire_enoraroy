@@ -1,0 +1,21 @@
+Lemme: witness | Mode: positif | Seuil: 1.5
+judge: 100.0000
+accuse: 100.0000
+testimony: 100.0000
+defendant: 100.0000
+criminal: 91.5552
+procedure: 86.6645
+confrontation: 82.5326
+law: 81.8069
+va.: 78.9483
+heinonline: 75.1519
+proof: 71.7107
+accuser: 61.4971
+court: 58.6281
+int: 55.0023
+34:481: 52.9862
+jury: 52.9650
+oath: 51.9469
+prosecution: 48.8693
+d.: 46.6379
+1994: 45.8402

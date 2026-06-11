@@ -1,0 +1,21 @@
+Lemme: muslims | Mode: positif | Seuil: 1.5
+christian: 100.0000
+jews: 100.0000
+norman: 100.0000
+christians: 100.0000
+muslim: 100.0000
+sicily: 100.0000
+islam: 100.0000
+palermo: 100.0000
+commercial: 100.0000
+hui: 100.0000
+jubayr: 100.0000
+batunskii: 100.0000
+goryeo: 98.9950
+hagarenes: 98.4149
+islamic: 97.2228
+sicilian: 87.6484
+jarā’id: 86.7468
+tatars: 84.1279
+ibn: 78.4111
+korean: 74.0306

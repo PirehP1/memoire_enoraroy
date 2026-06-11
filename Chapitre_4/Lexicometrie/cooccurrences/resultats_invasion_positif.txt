@@ -1,0 +1,21 @@
+Lemme: invasion | Mode: positif | Seuil: 1.5
+mongol: 100.0000
+barbarian: 58.1755
+mongols: 43.2459
+tatárjárás: 38.5606
+germanic: 34.1231
+attila: 26.5093
+invade: 23.4059
+hungarian: 21.6979
+vortigern: 20.4432
+jordanes: 18.9916
+ilkhanid: 18.8063
+migration: 18.6625
+musset: 18.3037
+army: 18.1875
+hunnic: 18.0249
+empire: 17.0137
+hungary: 16.7585
+conquest: 16.7497
+priscus: 16.4618
+threat: 16.0697

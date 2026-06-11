@@ -1,0 +1,21 @@
+Lemme: khan | Mode: positif | Seuil: 1.5
+mongol: 100.0000
+ruler: 100.0000
+mongols: 100.0000
+tatar: 100.0000
+tatars: 100.0000
+ulus: 100.0000
+chinggis: 100.0000
+genghis: 100.0000
+ong: 100.0000
+rachewiltz: 100.0000
+temüjin: 100.0000
+jamuqa: 100.0000
+irgen: 95.1375
+batu: 80.1098
+tayang: 77.3080
+tent: 72.2705
+mongolian: 71.5450
+thackston: 70.3484
+chingiz: 69.0670
+rubruck: 66.0207

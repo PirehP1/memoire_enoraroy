@@ -1,0 +1,21 @@
+Lemme: slavic | Mode: positif | Seuil: 1.5
+site: 100.0000
+population: 100.0000
+west: 100.0000
+specie: 100.0000
+genetic: 100.0000
+slavs: 100.0000
+flora: 100.0000
+cultivation: 100.0000
+croatian: 100.0000
+relics: 100.0000
+vascular: 100.0000
+celka: 100.0000
+zbigniew: 100.0000
+baltic: 93.9229
+component: 83.4667
+ancestry: 81.2219
+methodius: 77.5126
+castle: 70.7049
+ñ: 65.4790
+byzantine: 64.7693

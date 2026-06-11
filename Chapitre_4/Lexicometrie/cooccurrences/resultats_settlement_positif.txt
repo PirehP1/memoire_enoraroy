@@ -1,0 +1,21 @@
+Lemme: settlement | Mode: positif | Seuil: 1.5
+site: 100.0000
+area: 100.0000
+west: 100.0000
+archaeological: 100.0000
+castle: 100.0000
+slavic: 100.0000
+ñ: 100.0000
+specie: 100.0000
+poland: 100.0000
+forest: 100.0000
+rural: 100.0000
+flora: 100.0000
+cultivation: 100.0000
+dry: 100.0000
+fortify: 100.0000
+habitat: 100.0000
+concave: 100.0000
+grassland: 100.0000
+cone: 100.0000
+vascular: 100.0000

@@ -1,0 +1,21 @@
+Lemme: tale | Mode: positif | Seuil: 1.5
+jews: 100.0000
+story: 100.0000
+jewish: 100.0000
+daughter: 100.0000
+walter: 100.0000
+miracle: 100.0000
+jew: 100.0000
+chaucer: 100.0000
+miller: 100.0000
+clerk: 100.0000
+griselda: 100.0000
+reeve: 100.0000
+incest: 95.5759
+devil: 64.3872
+mary: 60.3640
+host: 58.3177
+father: 57.2887
+knight: 48.4302
+tales: 46.2482
+exempla: 45.6424

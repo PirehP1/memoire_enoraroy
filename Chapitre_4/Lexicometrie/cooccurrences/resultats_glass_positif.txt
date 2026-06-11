@@ -1,0 +1,21 @@
+Lemme: glass | Mode: positif | Seuil: 1.5
+composition: 100.0000
+surface: 100.0000
+layer: 100.0000
+alter: 100.0000
+window: 100.0000
+alteration: 100.0000
+stain: 100.0000
+diffusion: 100.0000
+oxide: 100.0000
+dissolution: 100.0000
+silicate: 100.0000
+corrosion: 100.0000
+cryst: 100.0000
+kinetic: 97.4644
+water: 95.7566
+thickness: 95.5546
+nuclear: 95.4378
+experiment: 94.0458
+mn: 93.5746
+opaque: 90.6931

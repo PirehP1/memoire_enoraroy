@@ -1,0 +1,21 @@
+Lemme: saga | Mode: positif | Seuil: 1.5
+author: 100.0000
+icelandic: 100.0000
+iceland: 100.0000
+magnus: 100.0000
+́fr: 100.0000
+jón: 100.0000
+árni: 100.0000
+njáls: 100.0000
+orkneyinga: 100.0000
+tryggvasonar: 100.0000
+́fs: 100.0000
+heiöreks: 100.0000
+sverris: 97.3683
+norse: 93.9666
+helgason: 91.4281
+heiòreks: 87.0798
+tryggvason: 86.9167
+narrative: 86.2094
+heimskringla: 81.7773
+snorri: 81.1008

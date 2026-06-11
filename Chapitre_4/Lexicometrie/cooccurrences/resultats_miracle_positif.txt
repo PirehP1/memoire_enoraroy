@@ -1,0 +1,21 @@
+Lemme: miracle | Mode: positif | Seuil: 1.5
+jews: 100.0000
+jewish: 100.0000
+mary: 100.0000
+tale: 100.0000
+jew: 100.0000
+truth: 95.6986
+doctrine: 81.3715
+virgin: 71.4582
+christian: 68.9690
+convert: 68.3209
+disputation: 57.4612
+darkness: 55.5348
+exempla: 53.1269
+devil: 49.8630
+host: 48.3891
+jesus: 46.9115
+story: 44.4668
+conversion: 44.0623
+christ: 43.3596
+god: 42.6507

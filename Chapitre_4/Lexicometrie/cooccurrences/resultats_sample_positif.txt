@@ -1,0 +1,21 @@
+Lemme: sample | Mode: positif | Seuil: 1.5
+analysis: 100.0000
+individual: 100.0000
+population: 100.0000
+value: 100.0000
+datum: 100.0000
+table: 100.0000
+=: 100.0000
+borough: 100.0000
+dna: 100.0000
+collagen: 100.0000
+radiocarbon: 98.7245
+use: 93.2286
+result: 90.9747
+bone: 86.9871
+ancestry: 86.4872
+site: 85.7115
+genetic: 84.0216
+glaze: 82.4092
+supplementary: 78.5432
+farm: 75.4485

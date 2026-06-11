@@ -1,0 +1,21 @@
+Lemme: norman | Mode: positif | Seuil: 1.5
+english: 100.0000
+anglo: 100.0000
+william: 100.0000
+twelfth: 100.0000
+muslims: 100.0000
+sicily: 100.0000
+normans: 100.0000
+conquest: 96.7842
+england: 82.7089
+anglo-: 76.7286
+1066: 74.6228
+palermo: 73.5344
+henry: 70.4097
+johns: 60.3298
+cambro: 59.8541
+sicilian: 58.9331
+ireland: 57.3739
+silk: 56.4589
+town: 55.9156
+harold: 52.2732

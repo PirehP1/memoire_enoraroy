@@ -1,0 +1,21 @@
+Lemme: ware | Mode: positif | Seuil: 1.5
+late: 100.0000
+post: 100.0000
+white: 100.0000
+fragment: 100.0000
+pottery: 100.0000
+green: 100.0000
+fine: 100.0000
+fill: 100.0000
+yellow: 100.0000
+fabric: 100.0000
+×: 100.0000
+glaze: 100.0000
+ceramic: 100.0000
+corinth: 100.0000
+clay: 100.0000
+abandonment: 100.0000
+glazed: 100.0000
+bowl: 100.0000
+slip: 100.0000
+rim: 100.0000

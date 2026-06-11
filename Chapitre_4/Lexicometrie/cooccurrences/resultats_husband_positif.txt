@@ -1,0 +1,21 @@
+Lemme: husband | Mode: positif | Seuil: 1.5
+man: 100.0000
+woman: 100.0000
+wife: 100.0000
+marriage: 100.0000
+beat: 100.0000
+shrewish: 100.0000
+scold: 100.0000
+image: 97.1085
+print: 86.1066
+henpecke: 84.5180
+spouse: 76.4062
+trouser: 76.3962
+power: 74.3660
+housewife: 68.5450
+female: 67.4527
+overbearing: 67.3430
+hen: 66.7989
+marital: 65.8022
+chore: 65.7899
+drunken: 65.7899

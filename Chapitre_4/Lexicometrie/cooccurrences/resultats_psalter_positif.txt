@@ -1,0 +1,21 @@
+Lemme: psalter | Mode: positif | Seuil: 1.5
+psalm: 100.0000
+utrecht: 100.0000
+tiberius: 100.0000
+crowland: 100.0000
+harley: 97.9113
+evil: 91.4065
+christ: 87.4650
+prayer: 70.3675
+image: 70.0145
+lib: 68.7580
+insular: 63.1665
+psalmist: 62.5923
+illustration: 59.9366
+monastic: 58.1888
+david: 56.4033
+trample: 55.6160
+miniature: 54.8706
+openshaw: 53.6325
+decoration: 51.7397
+: 51.5895

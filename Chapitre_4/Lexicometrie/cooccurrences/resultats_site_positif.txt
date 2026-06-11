@@ -1,0 +1,21 @@
+Lemme: site | Mode: positif | Seuil: 1.5
+study: 100.0000
+late: 100.0000
+period: 100.0000
+number: 100.0000
+area: 100.0000
+settlement: 100.0000
+west: 100.0000
+small: 100.0000
+archaeological: 100.0000
+castle: 100.0000
+burial: 100.0000
+slavic: 100.0000
+ñ: 100.0000
+bone: 100.0000
+survey: 100.0000
+specie: 100.0000
+excavation: 100.0000
+contribution: 100.0000
+valley: 100.0000
+total: 100.0000

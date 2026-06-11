@@ -1,0 +1,21 @@
+Lemme: saxon | Mode: positif | Seuil: 1.5
+english: 100.0000
+old: 100.0000
+england: 100.0000
+anglo: 100.0000
+bede: 100.0000
+saxons: 100.0000
+neville: 100.0000
+anglo-: 100.0000
+lapidge: 100.0000
+stellinga: 100.0000
+lazzi: 100.0000
+frilingi: 100.0000
+britain: 90.7264
+lothar: 77.5317
+alfred: 76.4217
+saxony: 74.5536
+early: 70.5628
+british: 67.8541
+edhilingui: 61.7890
+aldhelm: 61.1020

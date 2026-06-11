@@ -1,0 +1,21 @@
+Lemme: writing | Mode: positif | Seuil: 1.5
+write: 100.0000
+historical: 48.5077
+oral: 43.9568
+script: 42.0376
+speech: 38.6837
+literate: 30.2112
+włodkowic: 26.4664
+cursive: 25.8273
+utterance: 25.3902
+orality: 24.3716
+kind: 23.8623
+act: 23.1978
+transmission: 22.9450
+read: 22.8689
+kittay: 22.4785
+travel: 22.1888
+history: 22.0427
+runic: 20.4635
+rune: 20.4325
+ong: 20.3321

@@ -1,0 +1,21 @@
+Lemme: population | Mode: positif | Seuil: 1.5
+group: 100.0000
+individual: 100.0000
+european: 100.0000
+slavic: 100.0000
+migration: 100.0000
+genetic: 100.0000
+ancestry: 100.0000
+ma: 100.0000
+component: 100.0000
+genome: 100.0000
+admixture: 100.0000
+ia: 100.0000
+peloponnese: 100.0000
+peloponnesean: 100.0000
+ia_x: 100.0000
+sample: 94.3099
+croatian: 90.9793
+analysis: 87.8391
+qpadm: 84.3763
+ma_x: 84.2651

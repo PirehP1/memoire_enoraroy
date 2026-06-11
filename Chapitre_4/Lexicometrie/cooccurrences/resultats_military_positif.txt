@@ -1,0 +1,21 @@
+Lemme: military | Mode: positif | Seuil: 1.5
+roman: 100.0000
+army: 100.0000
+political: 81.6957
+empire: 61.1438
+war: 50.0128
+soldier: 49.5372
+byzantine: 48.9625
+bezławki: 48.2307
+troop: 43.9019
+imperial: 41.6165
+campaign: 40.0655
+civilian: 39.2871
+barbarization: 38.2107
+madgearu: 37.7124
+barbarian: 35.0356
+battle: 33.7419
+emperor: 33.0442
+warfare: 32.7694
+elite: 32.6368
+service: 30.5068

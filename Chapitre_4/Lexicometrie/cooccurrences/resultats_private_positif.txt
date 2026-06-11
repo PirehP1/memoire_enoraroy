@@ -1,0 +1,21 @@
+Lemme: private | Mode: positif | Seuil: 1.5
+public: 100.0000
+privacy: 33.9659
+amsterdam: 31.3807
+rijksprentenkabinet: 29.5654
+hollstein: 22.6070
+property: 20.2135
+slide: 19.7244
+pieter: 17.2736
+molenaer: 17.1619
+diary: 15.7905
+miense: 15.2068
+printed: 14.5320
+plot: 13.7907
+woman: 12.7342
+jan: 12.4632
+ritual: 12.4243
+votive: 11.9779
+hoorndrager: 11.4559
+household: 11.4049
+venne: 10.7206

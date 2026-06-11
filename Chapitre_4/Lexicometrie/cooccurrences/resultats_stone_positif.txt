@@ -1,0 +1,21 @@
+Lemme: stone | Mode: positif | Seuil: 1.5
+vinsavaara: 100.0000
+vaara: 100.0000
+tomb: 80.0421
+vin: 77.1825
+engrave: 60.0972
+wall: 58.1243
+lapidary: 57.9033
+cluster: 53.8647
+precious: 53.3423
+azareus: 50.5514
+rune: 46.4796
+lunde: 45.4072
+digby: 43.8836
+jelling: 37.4403
+techel: 36.3240
+rock: 34.5167
+altar: 32.2883
+item: 29.1396
+megalithic: 25.8806
+sepulchral: 25.8703

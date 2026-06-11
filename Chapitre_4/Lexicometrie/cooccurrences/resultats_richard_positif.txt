@@ -1,0 +1,21 @@
+Lemme: richard | Mode: positif | Seuil: 1.5
+ferumbras: 100.0000
+hart: 84.4939
+saracen: 71.7448
+seid: 67.6549
+sir: 67.0175
+cannibalism: 64.5396
+alice: 61.5496
+english: 50.0825
+mayrhofer: 49.5218
+william: 49.4379
+romance: 47.6839
+sonja: 46.3205
+humoral: 45.1434
+edward: 44.3713
+saracens: 43.4761
+fecamp: 43.1080
+thomas: 42.0826
+obsequies: 40.0338
+cœr: 39.4369
+blurton: 39.4369

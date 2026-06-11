@@ -1,0 +1,21 @@
+Lemme: holy | Mode: positif | Seuil: 1.5
+relic: 100.0000
+helena: 100.0000
+confraternity: 100.0000
+christ: 99.3741
+cross: 85.4542
+god: 76.4011
+jerusalem: 73.7500
+jesus: 60.4474
+jews: 59.0279
+church: 58.1235
+st: 53.9752
+pilgrimage: 51.9409
+piety: 46.5508
+feast: 42.7158
+monza: 42.4001
+pilgrim: 42.0625
+ampullae: 36.7001
+mosaic: 36.1027
+bynum: 34.8272
+virgin: 34.8254

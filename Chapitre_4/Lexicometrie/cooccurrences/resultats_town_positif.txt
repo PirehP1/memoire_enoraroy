@@ -1,0 +1,21 @@
+Lemme: town | Mode: positif | Seuil: 1.5
+wall: 100.0000
+urban: 100.0000
+katherine: 100.0000
+defence: 100.0000
+statute: 100.0000
+galway: 100.0000
+masonry: 100.0000
+athenry: 100.0000
+creighton: 100.0000
+connacht: 100.0000
+dunmore: 100.0000
+loughrea: 97.3854
+norman: 84.9720
+castle: 82.1445
+mining: 74.0656
+murage: 72.1290
+ireland: 71.8036
+sicily: 66.8884
+-idrisi: 66.5410
+city: 61.9741

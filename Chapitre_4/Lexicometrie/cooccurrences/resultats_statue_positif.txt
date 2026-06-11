@@ -1,0 +1,21 @@
+Lemme: statue | Mode: positif | Seuil: 1.5
+cult: 69.2061
+pagan: 61.1380
+temple: 50.1118
+destruction: 42.3002
+idol: 34.5897
+daishõgun: 34.2633
+monument: 33.1738
+shrine: 28.8923
+demon: 28.5147
+topple: 17.3665
+vulfilaic: 16.9816
+sanctuary: 16.8802
+hachi: 16.8539
+sculpture: 16.7052
+bronze: 16.5203
+camille: 16.4168
+saxo: 15.4770
+burgundy: 15.3489
+parastaseis: 14.9997
+statuette: 14.9703

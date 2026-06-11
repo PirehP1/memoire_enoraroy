@@ -1,0 +1,21 @@
+Lemme: individual | Mode: positif | Seuil: 1.5
+group: 100.0000
+population: 100.0000
+value: 100.0000
+sample: 100.0000
+genetic: 100.0000
+ancestry: 100.0000
+diet: 100.0000
+genome: 100.0000
+ia: 100.0000
+analysis: 86.7645
+cne: 83.0860
+bmd: 81.0272
+file: 78.6933
+pca: 77.4862
+dataset: 76.9955
+admixture: 73.3940
+supplementary: 72.4637
+isotope: 70.9568
+ancient: 70.8835
+age: 69.7740

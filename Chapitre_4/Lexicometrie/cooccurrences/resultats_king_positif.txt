@@ -1,0 +1,21 @@
+Lemme: king | Mode: positif | Seuil: 1.5
+son: 100.0000
+royal: 100.0000
+court: 100.0000
+kingdom: 100.0000
+saga: 100.0000
+reign: 100.0000
+realm: 100.0000
+danish: 100.0000
+́fr: 100.0000
+jws: 100.0000
+norwegian: 95.8096
+ruler: 93.8603
+prosaiska: 83.9743
+krönikan: 83.9516
+haraldr: 83.5691
+throne: 80.2596
+aldhelm: 77.8903
+chronicle: 77.3996
+lord: 74.2434
+archbishop: 71.1505

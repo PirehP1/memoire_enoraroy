@@ -1,0 +1,21 @@
+Lemme: master | Mode: positif | Seuil: 1.5
+slave: 100.0000
+#: 100.0000
+silver: 100.0000
+gold: 100.0000
+elect: 100.0000
+mint: 100.0000
+sv: 100.0000
+houghton: 100.0000
+wavrin: 100.0000
+estimo: 97.8516
+dq: 92.7563
+gr: 85.6152
+marmion: 77.8946
+freedwoman: 76.6863
+mc: 68.3112
+aug.: 60.7064
+oct.: 56.2824
+raspe: 54.0142
+illumination: 53.5659
+manumission: 53.4537

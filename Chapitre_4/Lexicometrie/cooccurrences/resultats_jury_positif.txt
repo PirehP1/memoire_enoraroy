@@ -1,0 +1,21 @@
+Lemme: jury | Mode: positif | Seuil: 1.5
+law: 100.0000
+trial: 100.0000
+proof: 100.0000
+vicinage: 100.0000
+juror: 98.7197
+antecedents: 92.1940
+verdict: 74.1903
+anger: 69.3394
+witness: 55.5357
+felony: 44.5303
+compurgation: 42.8376
+ordeal: 42.4508
+common: 39.9691
+glanvill: 39.8228
+assize: 38.9242
+court: 35.6708
+brunner: 34.6041
+criminal: 31.7366
+mode: 29.9869
+judgment: 29.3370

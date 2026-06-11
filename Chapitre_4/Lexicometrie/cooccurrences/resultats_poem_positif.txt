@@ -1,0 +1,21 @@
+Lemme: poem | Mode: positif | Seuil: 1.5
+english: 100.0000
+line: 100.0000
+poet: 100.0000
+poetry: 100.0000
+beowulf: 100.0000
+epic: 100.0000
+old: 86.3135
+verse: 85.8094
+lot: 80.8717
+brunanburh: 77.3266
+chatterton: 75.6073
+poetic: 64.7433
+write: 64.7005
+song: 61.8772
+sappho: 57.5565
+anglo: 55.2964
+translation: 53.7876
+text: 52.2985
+love: 51.6845
+gawain: 49.3922

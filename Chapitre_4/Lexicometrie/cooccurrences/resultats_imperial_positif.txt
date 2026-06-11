@@ -1,0 +1,21 @@
+Lemme: imperial | Mode: positif | Seuil: 1.5
+roman: 100.0000
+empire: 100.0000
+emperor: 100.0000
+rome: 92.5370
+barbarian: 64.9229
+philostorgius: 54.0931
+helena: 52.0758
+contorniate: 44.9347
+constantius: 41.0556
+qing: 37.0595
+constantine: 36.0343
+bishop: 35.9642
+frontier: 35.9368
+china: 34.4253
+pope: 34.1324
+coronation: 33.3096
+military: 32.5973
+mussato: 32.3433
+augustus: 31.5676
+constantinople: 31.4242

@@ -1,0 +1,21 @@
+Lemme: image | Mode: positif | Seuil: 1.5
+art: 100.0000
+christ: 100.0000
+wife: 100.0000
+theme: 99.7375
+visual: 99.6328
+figure: 99.0861
+psalter: 98.8483
+housewife: 91.2661
+husband: 90.0065
+scene: 86.8595
+depict: 78.0591
+intent: 77.4816
+representation: 76.2758
+moralize: 71.4881
+woman: 70.5668
+earthquake: 67.0031
+artist: 64.7520
+yushu: 61.9739
+building: 56.6728
+imagery: 56.5092

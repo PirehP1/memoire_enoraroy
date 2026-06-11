@@ -1,0 +1,21 @@
+Lemme: utterance | Mode: positif | Seuil: 1.5
+write: 51.0915
+writing: 40.3954
+act: 40.3736
+impose: 23.1803
+oral: 20.4963
+space: 20.3898
+speak: 20.0929
+word: 17.1947
+noun: 15.8958
+performative: 14.3448
+speech: 12.3931
+kind: 11.6979
+verbal: 10.7286
+imposition: 10.0390
+eike: 9.9582
+book: 9.7945
+scripture: 9.6359
+havelok: 9.4707
+fix: 9.2989
+constraint: 9.1190

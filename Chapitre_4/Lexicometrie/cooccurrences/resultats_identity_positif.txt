@@ -1,0 +1,21 @@
+Lemme: identity | Mode: positif | Seuil: 1.5
+group: 100.0000
+social: 100.0000
+cultural: 100.0000
+national: 100.0000
+ethnic: 100.0000
+ethnicity: 100.0000
+havelok: 100.0000
+euphrosyne: 100.0000
+pohl: 88.9054
+religious: 75.5231
+roman: 71.8647
+community: 70.1441
+albanian: 68.0570
+gender: 64.9030
+language: 59.7808
+self: 59.0921
+construct: 55.8628
+linguistic: 55.0435
+identification: 49.9812
+narrative: 49.2156

@@ -1,0 +1,21 @@
+Lemme: legend | Mode: positif | Seuil: 1.5
+saint: 100.0000
+version: 100.0000
+cross: 100.0000
+helena: 100.0000
+judas: 100.0000
+pallas: 100.0000
+transmission: 84.7578
+inventio: 83.4182
+giant: 78.7289
+wilgefortis: 75.7861
+theodoricus: 74.5282
+breta: 66.8178
+̈gur: 62.5849
+text: 56.1267
+relic: 52.9610
+bodel: 49.0077
+voragine: 47.6404
+story: 46.0339
+hauksbó: 44.6718
+golden: 43.1773

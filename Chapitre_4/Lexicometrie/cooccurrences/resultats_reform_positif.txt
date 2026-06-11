@@ -1,0 +1,21 @@
+Lemme: reform | Mode: positif | Seuil: 1.5
+vote: 100.0000
+mps: 100.0000
+borough: 86.2256
+1831: 83.8077
+mp: 50.4414
+farm: 49.1554
+election: 38.5232
+reformed: 36.0885
+grant: 36.0257
+parliamentary: 32.1836
+voting: 31.4105
+gregorian: 30.7923
+church: 28.7409
+wang: 28.5772
+support: 28.3404
+act: 28.2019
+elect: 27.5273
+march: 23.6504
+confession: 23.1155
+monastic: 22.4578

@@ -1,0 +1,21 @@
+Lemme: system | Mode: positif | Seuil: 1.5
+legal: 100.0000
+defence: 87.1661
+caste: 70.2423
+farming: 68.3063
+rice: 59.4235
+law: 50.2138
+labor: 48.4753
+oozhiyam: 48.3415
+kerala: 45.1519
+economic: 41.2482
+stalactite: 41.2346
+millet: 40.7326
+ahom: 38.8676
+fortify: 30.7655
+function: 29.7659
+nervous: 29.1828
+state: 28.3692
+barangay: 28.1964
+political: 27.9304
+8543: 27.1434

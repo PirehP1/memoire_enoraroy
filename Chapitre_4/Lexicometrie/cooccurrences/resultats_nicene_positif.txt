@@ -1,0 +1,21 @@
+Lemme: nicene | Mode: positif | Seuil: 1.5
+bishop: 100.0000
+arian: 100.0000
+philostorgius: 100.0000
+episcopus: 100.0000
+church: 74.2965
+scythia: 68.7504
+arians: 57.7387
+barbarian: 55.2831
+presbyter: 54.3662
+illyricum: 53.9857
+330: 43.2860
+anonymous: 41.0500
+bishops: 39.7806
+maximinus: 38.4817
+othia: 35.6978
+548: 34.6846
+leovigild: 33.4164
+ulfila: 32.5536
+selenas: 31.1561
+sigesarius: 30.7835
