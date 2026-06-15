@@ -8,6 +8,8 @@ La base est stockée sous forme NoSQL (MongoDB), dans deux collections au format
 
 Ce choix architectural est aussi un choix épistémologique : là où un modèle relationnel aurait contraint chaque notice à un schéma prédéfini et identique pour toutes, le format document permet de préserver la singularité de chaque notice. La richesse ou la pauvreté des informations associées à une référence ou à un auteur est en elle-même une information sur l'objet d'étude. Chaque document peut avoir des champs totalement différents des autres au sein de la même collection, et peut évoluer sans fragiliser l'ensemble de la base.
 
+> note : la migration vers NoSQL ayant été faite en cours d'année et sans cours institué pour accompagner la constitution de la base, elle présente des artefacts pouvant paraître étrange pour une base document. Par exemple, trois champs indépendants servent pour la langue : iso, name et qid, qui auraient pu être regroupés en une liste sous la clé de la langue. Cela n'empêche pas le traitement, mais peut, de prime abord, sembler incohérent.
+
 ---
 
 ## Deux collections
