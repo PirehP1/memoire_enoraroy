@@ -69,8 +69,8 @@ UMAP_CACHE = os.path.join(OUTPUT_DIR, "umap_embeddings_cache.npy")
 docs        = list(np.load(DOCS_CACHE,        allow_pickle=True))
 doc_ids     = list(np.load(IDS_CACHE,         allow_pickle=True))
 docs_ctfidf = list(np.load(DOCS_CTFIDF_CACHE, allow_pickle=True))
-embeddings  = np.load(EMBED_CACHE)
-umap_embeddings = np.load(UMAP_CACHE)
+embeddings  = np.load(EMBED_CACHE) #ici les embeddings
+umap_embeddings = np.load(UMAP_CACHE) #là on charge la réduction UMAP
 
 with open(os.path.join(OUTPUT_DIR, "best_n.json")) as f:
     best_n = json.load(f)["best_n"]
@@ -101,19 +101,22 @@ vectorizer = CountVectorizer(
 
 print(f"\nFitting BERTopic final avec Ward (n_clusters={best_n})...")
 
+#clustering hiérarchique avec Ward plutôt que HDBSCAN
+
 embed_model_final = SentenceTransformer(EMBED_MODEL)
 best_ward = AgglomerativeClustering(
-    n_clusters=best_n, linkage="ward", metric=WARD_METRIC
+    n_clusters=best_n, linkage="ward", metric=WARD_METRIC #nb de k choisi du coup
 )
 
 model = BERTopic(
-    embedding_model=embed_model_final,
+    embedding_model=embed_model_final, #le modèle d'embedding retenu
     umap_model=umap.UMAP(random_state=RANDOM_STATE, **UMAP_PARAMS),
-    hdbscan_model=best_ward,
+    hdbscan_model=best_ward, #ici du coup ward
     vectorizer_model=vectorizer,
     calculate_probabilities=False,
     verbose=True,
 )
+#apprentissage et assignation des topics
 topics, _ = model.fit_transform(docs, embeddings)
 
 print("\nMise à jour c-TF-IDF initiale (docs_ctfidf, labels originaux)...")
@@ -127,6 +130,7 @@ model.update_topics(docs_ctfidf, vectorizer_model=vectorizer, top_n_words=TOP_N_
 topic_labels = np.array(topics)
 mask_before  = topic_labels != -1
 
+#calcul des scores
 sil_f_umap = silhouette_score(umap_embeddings[mask_before], topic_labels[mask_before])
 ch_f_umap  = calinski_harabasz_score(umap_embeddings[mask_before], topic_labels[mask_before])
 db_f_umap  = davies_bouldin_score(umap_embeddings[mask_before], topic_labels[mask_before])
