@@ -31,12 +31,17 @@ UMAP_CACHE = os.path.join(OUTPUT_DIR, "umap_embeddings_cache.npy")
 
 embeddings = np.load(EMBED_CACHE)
 
+#pour ne pas recalculer le UMAP au cas où
 if os.path.exists(UMAP_CACHE):
     print("UMAP trouvé en cache → chargement...")
     umap_embeddings = np.load(UMAP_CACHE)
 else:
     print("Réduction UMAP (pré-calcul pour grid search)...")
+    # Création du modèle UMAP avec paramètres définis dans config.py
+    # RANDOM_STATE : garantit reproductibilité des projections
+    # **UMAP_PARAMS : injecte n_neighbors, min_dist, n_components, metric, etc.
     reducer = umap.UMAP(random_state=RANDOM_STATE, **UMAP_PARAMS)
+    # Apprentissage + projection des embeddings dans un espace réduit (ex: 768 → 5)
     umap_embeddings = reducer.fit_transform(embeddings)
     np.save(UMAP_CACHE, umap_embeddings)
     print("UMAP sauvegardé en cache.")
