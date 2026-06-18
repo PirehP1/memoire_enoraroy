@@ -64,17 +64,20 @@ def build_dtm(df_lv: pd.DataFrame, col: str = "lemma") -> tuple:
         preprocessor=nothing,
         token_pattern=None,
     )
+    #transformation en sac de mots
     X   = vec.fit_transform(df_lv[col])
+    #conversion en dataframe
     dtm = pd.DataFrame(
         X.toarray(),
         columns=vec.get_feature_names_out(),
-        index=df_lv["year"],
+        index=df_lv["year"], #index pour l'année, agrégation temporelle
     )
     return dtm, vec
 
 
 def align_index(series_a: pd.Series, series_b: pd.Series) -> tuple:
     """Aligne deux séries sur l'union de leurs index, avec fill_value=0."""
+    #permet de comparer corpus propre et corpus bruité
     idx = series_a.index.union(series_b.index)
     return series_a.reindex(idx, fill_value=0), series_b.reindex(idx, fill_value=0)
 
