@@ -44,6 +44,6 @@ Mes interactions avec les LLM se sont limitées à l'interface textuelle (chatbo
 Je tiens à remercier l'équipe du PIREH de rendre ce dépôt et cet hébergement possibles, ainsi que l'ensemble de l'équipe pédagogique pour l'accompagnement tout au long de ce projet, sans lequel rien n'aurait été possible.
 
 ---
-# Annnexe
+# Annexe
 
 Afin de respecter les cadres réglementaires liés à la diffusion des données textuelles et les droits de propriété intellectuelle associés à certains corpus de l'historiographie étudiée, les données sources brutes ne sont pas hébergées sur ce dépôt institutionnel. Les scripts et protocoles fournis ici sont toutefois pleinement fonctionnels et reproductibles. Pour tout accès à ces scripts et donées complémentaires, j'invite le lecteur à se reporter à mon propre [profil](https://github.com/enoraroy).
